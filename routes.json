@@ -1,0 +1,6292 @@
+[
+  {
+    "route_id": "1",
+    "name": "New Maloya Colony to Manimajra",
+    "description": "Via Dadumajra village, CTU W/S, 25/38, 24/25, PGI, 15Mkt, 16Mkt, 17/16, ISBT-17, 18Mkt, 19Mkt, 27Mkt, 28 Mkt, CTU W/shop, R/Stn, R/Crossing, Kalagram, H/B Chowk",
+    "color": "#E91E63",
+    "stops": [
+      {
+        "stationid": 259,
+        "name": "New Maloya Colony",
+        "lat": 30.75985,
+        "lng": 76.71566
+      },
+      {
+        "stationid": 171,
+        "name": "Maloya",
+        "lat": 30.7522,
+        "lng": 76.7176
+      },
+      {
+        "stationid": 137,
+        "name": "Dadu Majra Village",
+        "lat": 30.75939,
+        "lng": 76.73487
+      },
+      {
+        "stationid": 175,
+        "name": "Daddu Majra Colony",
+        "lat": 30.75456,
+        "lng": 76.74626
+      },
+      {
+        "stationid": 577,
+        "name": "Depot 3 Workshop",
+        "lat": 30.75378,
+        "lng": 76.74884
+      },
+      {
+        "stationid": 290,
+        "name": "Sector 38/25 Light Point",
+        "lat": 30.75071,
+        "lng": 76.74856
+      },
+      {
+        "stationid": 191,
+        "name": "Sector 25/24",
+        "lat": 30.74781,
+        "lng": 76.75808
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 373,
+        "name": "Sector 15 market",
+        "lat": 30.75199,
+        "lng": 76.77281
+      },
+      {
+        "stationid": 112,
+        "name": "Sector 16 Market (Down)",
+        "lat": 30.74666,
+        "lng": 76.7768
+      },
+      {
+        "stationid": 60,
+        "name": "Sector 17/16",
+        "lat": 30.74193,
+        "lng": 76.77829
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 114,
+        "name": "Sector 18 Market (Down)",
+        "lat": 30.73339,
+        "lng": 76.78867
+      },
+      {
+        "stationid": 121,
+        "name": "Sector 19 Market (Down)",
+        "lat": 30.72863,
+        "lng": 76.79264
+      },
+      {
+        "stationid": 126,
+        "name": "Sector 27 Market (Down)",
+        "lat": 30.72279,
+        "lng": 76.79879
+      },
+      {
+        "stationid": 134,
+        "name": "Sector 28 Market (Down)",
+        "lat": 30.71731,
+        "lng": 76.8035
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 145,
+        "name": "Kalagram Down",
+        "lat": 30.7097,
+        "lng": 76.82869
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      }
+    ],
+    "schedule": {
+      "time_range": "06:10-18:40",
+      "frequency": "20 min",
+      "length_km": 24,
+      "num_buses": 8
+    }
+  },
+  {
+    "route_id": "2A",
+    "name": "Manimajra to Manimajra",
+    "description": "Via Indira Colony, M/Complex, R/Crossing, Sec-28/26 G.Mkt, 19/7, 18/8, 22/17, 16/10, 15/11, PGI, Khuda Lahora, S/P Barrier, Dhanas, DMC, CTU Workshop, 25/38, 25/24, 24/15, 23/16, ISBT-17, 18/21, 19/20, 27/30, 28/29, Elante Mall, Colony No.4, CTU Workshop, R/Station, R/Crossing, H.B.Chowk",
+    "color": "#4CAF50",
+    "stops": [
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 536,
+        "name": "Indira Colony Up",
+        "lat": 30.7202,
+        "lng": 76.84075
+      },
+      {
+        "stationid": 150,
+        "name": "Modern Complex",
+        "lat": 30.71616,
+        "lng": 76.83102
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 90,
+        "name": "Sector 19/7",
+        "lat": 30.73097,
+        "lng": 76.79945
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 552,
+        "name": "Sector 22/17",
+        "lat": 30.73597,
+        "lng": 76.7774
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 119,
+        "name": "Sector 15/11",
+        "lat": 30.75437,
+        "lng": 76.77931
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 70,
+        "name": "Khuda Lahora (Down)",
+        "lat": 30.77572,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 72,
+        "name": "Sarangpur Barrier (Down)",
+        "lat": 30.78638,
+        "lng": 76.75563
+      },
+      {
+        "stationid": 101,
+        "name": "Dhanas (Down)",
+        "lat": 30.76946,
+        "lng": 76.75026
+      },
+      {
+        "stationid": 577,
+        "name": "Depot 3 Workshop",
+        "lat": 30.75378,
+        "lng": 76.74884
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 290,
+        "name": "Sector 38/25 Light Point",
+        "lat": 30.75071,
+        "lng": 76.74856
+      },
+      {
+        "stationid": 191,
+        "name": "Sector 25/24",
+        "lat": 30.74781,
+        "lng": 76.75808
+      },
+      {
+        "stationid": 297,
+        "name": "Sector 24/15",
+        "lat": 30.74929,
+        "lng": 76.76646
+      },
+      {
+        "stationid": 333,
+        "name": "Sector 23/16",
+        "lat": 30.74353,
+        "lng": 76.77107
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 325,
+        "name": "Sector 18/21",
+        "lat": 30.73124,
+        "lng": 76.78176
+      },
+      {
+        "stationid": 326,
+        "name": "Sector 19/20",
+        "lat": 30.7252,
+        "lng": 76.78726
+      },
+      {
+        "stationid": 327,
+        "name": "Sector 27/30",
+        "lat": 30.71971,
+        "lng": 76.79228
+      },
+      {
+        "stationid": 328,
+        "name": "Sector 28/29",
+        "lat": 30.71432,
+        "lng": 76.79767
+      },
+      {
+        "stationid": 96,
+        "name": "Elante Mall (Down)",
+        "lat": 30.70589,
+        "lng": 76.79668
+      },
+      {
+        "stationid": 91,
+        "name": "Colony No. 4",
+        "lat": 30.70052,
+        "lng": 76.80334
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      }
+    ],
+    "schedule": {
+      "time_range": "05:40-20:30",
+      "frequency": "20-25 min",
+      "length_km": 38.3,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "2C",
+    "name": "Manimajra to Manimajra",
+    "description": "Via H.B.Chowk, R/Station, CTU W/Shop, Colony No-4, Elante Mall, Sec-29/28, 30/27, 20/19, 21/18, 22/17, 16/23, 15/24, 24/25, 38/25, CTU W/Shop, DMC, Dhanas, SP Barrier, K.Lahora, PGI, 11/15, 10/16, ISBT-17, 8/18, 7/19, 26/28, G.Mkt, R/Crossing, M/Complex, M.M.Town, Indra Colony",
+    "color": "#2196F3",
+    "stops": [
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 91,
+        "name": "Colony No. 4",
+        "lat": 30.70052,
+        "lng": 76.80334
+      },
+      {
+        "stationid": 96,
+        "name": "Elante Mall (Down)",
+        "lat": 30.70589,
+        "lng": 76.79668
+      },
+      {
+        "stationid": 329,
+        "name": "Sector 29/28",
+        "lat": 30.71311,
+        "lng": 76.7987
+      },
+      {
+        "stationid": 330,
+        "name": "Sector 30/27",
+        "lat": 30.71821,
+        "lng": 76.79367
+      },
+      {
+        "stationid": 331,
+        "name": "Sector 20/19",
+        "lat": 30.72397,
+        "lng": 76.78806
+      },
+      {
+        "stationid": 332,
+        "name": "Sector 21/18",
+        "lat": 30.72973,
+        "lng": 76.78282
+      },
+      {
+        "stationid": 552,
+        "name": "Sector 22/17",
+        "lat": 30.73597,
+        "lng": 76.7774
+      },
+      {
+        "stationid": 333,
+        "name": "Sector 23/16",
+        "lat": 30.74353,
+        "lng": 76.77107
+      },
+      {
+        "stationid": 296,
+        "name": "Sector 15/24",
+        "lat": 30.74999,
+        "lng": 76.76614
+      },
+      {
+        "stationid": 190,
+        "name": "Sector 24/25",
+        "lat": 30.74837,
+        "lng": 76.75907
+      },
+      {
+        "stationid": 290,
+        "name": "Sector 38/25 Light Point",
+        "lat": 30.75071,
+        "lng": 76.74856
+      },
+      {
+        "stationid": 577,
+        "name": "Depot 3 Workshop",
+        "lat": 30.75378,
+        "lng": 76.74884
+      },
+      {
+        "stationid": 101,
+        "name": "Dhanas (Down)",
+        "lat": 30.76946,
+        "lng": 76.75026
+      },
+      {
+        "stationid": 72,
+        "name": "Sarangpur Barrier (Down)",
+        "lat": 30.78638,
+        "lng": 76.75563
+      },
+      {
+        "stationid": 70,
+        "name": "Khuda Lahora (Down)",
+        "lat": 30.77572,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 118,
+        "name": "Sector 11/15",
+        "lat": 30.75663,
+        "lng": 76.77767
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 89,
+        "name": "Sector 7/19",
+        "lat": 30.73128,
+        "lng": 76.7995
+      },
+      {
+        "stationid": 128,
+        "name": "Sector 28/26 Grain Market",
+        "lat": 30.7224,
+        "lng": 76.80765
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 150,
+        "name": "Modern Complex",
+        "lat": 30.71616,
+        "lng": 76.83102
+      },
+      {
+        "stationid": 374,
+        "name": "Mani Majra Town",
+        "lat": 30.71971,
+        "lng": 76.82995
+      },
+      {
+        "stationid": 536,
+        "name": "Indira Colony Up",
+        "lat": 30.7202,
+        "lng": 76.84075
+      }
+    ],
+    "schedule": {
+      "time_range": "05:30-20:20",
+      "frequency": "20-25 min",
+      "length_km": 38.3,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "4A",
+    "name": "ISBT-43 to ISBT-43",
+    "description": "Via 43/44, 35/34, Aroma, 22/17, 16/17, R/Garden, 16/10 Hospital, OPD, PGI, K/Lahora, IRB, S/P Barrier, Dhanas, DMC, CTU Depot-III, 38west, Maloya, Ph-6, Old Barrier, Franco, Badheri Chowk, 40/41, 41mkt, 42mkt",
+    "color": "#FF9800",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 552,
+        "name": "Sector 22/17",
+        "lat": 30.73597,
+        "lng": 76.7774
+      },
+      {
+        "stationid": 59,
+        "name": "Sector 16/17",
+        "lat": 30.74208,
+        "lng": 76.77813
+      },
+      {
+        "stationid": 604,
+        "name": "16/10  ROSE GARDEN",
+        "lat": 30.74819,
+        "lng": 76.78425
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 70,
+        "name": "Khuda Lahora (Down)",
+        "lat": 30.77572,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 357,
+        "name": "IRB Camp",
+        "lat": 30.79185,
+        "lng": 76.76772
+      },
+      {
+        "stationid": 72,
+        "name": "Sarangpur Barrier (Down)",
+        "lat": 30.78638,
+        "lng": 76.75563
+      },
+      {
+        "stationid": 101,
+        "name": "Dhanas (Down)",
+        "lat": 30.76946,
+        "lng": 76.75026
+      },
+      {
+        "stationid": 577,
+        "name": "Depot 3 Workshop",
+        "lat": 30.75378,
+        "lng": 76.74884
+      },
+      {
+        "stationid": 174,
+        "name": "Sector 38 West",
+        "lat": 30.75279,
+        "lng": 76.73758
+      },
+      {
+        "stationid": 171,
+        "name": "Maloya",
+        "lat": 30.7522,
+        "lng": 76.7176
+      },
+      {
+        "stationid": 170,
+        "name": "Phase-6 (U.T Border) A",
+        "lat": 30.7382,
+        "lng": 76.71463
+      },
+      {
+        "stationid": 169,
+        "name": "Old Barrier",
+        "lat": 30.72997,
+        "lng": 76.72111
+      },
+      {
+        "stationid": 168,
+        "name": "Franco",
+        "lat": 30.72672,
+        "lng": 76.724
+      },
+      {
+        "stationid": 276,
+        "name": "Furniture Chowk(UT Border)",
+        "lat": 30.72729,
+        "lng": 76.73384
+      },
+      {
+        "stationid": 209,
+        "name": "Sector 40/41",
+        "lat": 30.73529,
+        "lng": 76.73782
+      },
+      {
+        "stationid": 125,
+        "name": "Sector 41 Market Towards 42",
+        "lat": 30.73149,
+        "lng": 76.73837
+      },
+      {
+        "stationid": 32,
+        "name": "Sector 42 Market towards Sector 41",
+        "lat": 30.72539,
+        "lng": 76.74331
+      }
+    ],
+    "schedule": {
+      "time_range": "06:45-16:50",
+      "frequency": "25-30 min",
+      "length_km": 32.5,
+      "num_buses": 4
+    }
+  },
+  {
+    "route_id": "4C",
+    "name": "ISBT-43 to ISBT-43",
+    "description": "Via 43/44, 42mkt, 41mkt, 41/40, Badheri Chowk, Franco, O/Barrier, Ph-6, Maloya, 38west, CTU Depot-III, DMC, Dhanas, S/P Barrier, K/Lahora, PGI, OPD, 10/11, 10/16, 17/16, ISBT-17, Aroma, 34/35, 44/43",
+    "color": "#9C27B0",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 32,
+        "name": "Sector 42 Market towards Sector 41",
+        "lat": 30.72539,
+        "lng": 76.74331
+      },
+      {
+        "stationid": 125,
+        "name": "Sector 41 Market Towards 42",
+        "lat": 30.73149,
+        "lng": 76.73837
+      },
+      {
+        "stationid": 413,
+        "name": "Sector 41/40",
+        "lat": 30.73508,
+        "lng": 76.73799
+      },
+      {
+        "stationid": 276,
+        "name": "Furniture Chowk(UT Border)",
+        "lat": 30.72729,
+        "lng": 76.73384
+      },
+      {
+        "stationid": 168,
+        "name": "Franco",
+        "lat": 30.72672,
+        "lng": 76.724
+      },
+      {
+        "stationid": 169,
+        "name": "Old Barrier",
+        "lat": 30.72997,
+        "lng": 76.72111
+      },
+      {
+        "stationid": 170,
+        "name": "Phase-6 (U.T Border) A",
+        "lat": 30.7382,
+        "lng": 76.71463
+      },
+      {
+        "stationid": 171,
+        "name": "Maloya",
+        "lat": 30.7522,
+        "lng": 76.7176
+      },
+      {
+        "stationid": 174,
+        "name": "Sector 38 West",
+        "lat": 30.75279,
+        "lng": 76.73758
+      },
+      {
+        "stationid": 577,
+        "name": "Depot 3 Workshop",
+        "lat": 30.75378,
+        "lng": 76.74884
+      },
+      {
+        "stationid": 101,
+        "name": "Dhanas (Down)",
+        "lat": 30.76946,
+        "lng": 76.75026
+      },
+      {
+        "stationid": 72,
+        "name": "Sarangpur Barrier (Down)",
+        "lat": 30.78638,
+        "lng": 76.75563
+      },
+      {
+        "stationid": 70,
+        "name": "Khuda Lahora (Down)",
+        "lat": 30.77572,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 611,
+        "name": "Sector 11/10",
+        "lat": 30.758,
+        "lng": 76.78859
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 60,
+        "name": "Sector 17/16",
+        "lat": 30.74193,
+        "lng": 76.77829
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 938,
+        "name": "Sector 34/35",
+        "lat": 30.72221,
+        "lng": 76.76184
+      },
+      {
+        "stationid": 84,
+        "name": "Sector 44/43",
+        "lat": 30.71579,
+        "lng": 76.75161
+      }
+    ],
+    "schedule": {
+      "time_range": "07:00-17:05",
+      "frequency": "25-30 min",
+      "length_km": 32.5,
+      "num_buses": 4
+    }
+  },
+  {
+    "route_id": "5A",
+    "name": "Ram Darbar to Ram Darbar",
+    "description": "Via Sec-47, 46/47, 32/31, 30/29, 27/28, 27/26, 19/7, 18/8, 17/9, 16/10, 15/11, PGI, Uni, 15/14, 24/25, 37/38, 38/40, 39/38west, Maloya, 39, 40, 41, 42 mkts, ISBT-43, 44, 45, 46, 47 mkts, Ram Darbar",
+    "color": "#F44336",
+    "stops": [
+      {
+        "stationid": 94,
+        "name": "Ram Darbar",
+        "lat": 30.69344,
+        "lng": 76.78826
+      },
+      {
+        "stationid": 153,
+        "name": "Sector 47 Market - Up",
+        "lat": 30.69573,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 180,
+        "name": "SECTOR 46/47",
+        "lat": 30.69882,
+        "lng": 76.76729
+      },
+      {
+        "stationid": 181,
+        "name": "Sector 32/31",
+        "lat": 30.70607,
+        "lng": 76.77894
+      },
+      {
+        "stationid": 183,
+        "name": "Sector 30/29",
+        "lat": 30.71318,
+        "lng": 76.79033
+      },
+      {
+        "stationid": 185,
+        "name": "Sector 27/28",
+        "lat": 30.72084,
+        "lng": 76.80262
+      },
+      {
+        "stationid": 79,
+        "name": "Sector 27/26",
+        "lat": 30.72576,
+        "lng": 76.80446
+      },
+      {
+        "stationid": 90,
+        "name": "Sector 19/7",
+        "lat": 30.73097,
+        "lng": 76.79945
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 173,
+        "name": "Sector 17/9 K.C (Down)",
+        "lat": 30.74311,
+        "lng": 76.78887
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 119,
+        "name": "Sector 15/11",
+        "lat": 30.75437,
+        "lng": 76.77931
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 188,
+        "name": "Sector 15/14",
+        "lat": 30.75578,
+        "lng": 76.7709
+      },
+      {
+        "stationid": 190,
+        "name": "Sector 24/25",
+        "lat": 30.74837,
+        "lng": 76.75907
+      },
+      {
+        "stationid": 38,
+        "name": "Sector 37/38",
+        "lat": 30.74207,
+        "lng": 76.74892
+      },
+      {
+        "stationid": 192,
+        "name": "Sector 40/38",
+        "lat": 30.74342,
+        "lng": 76.73849
+      },
+      {
+        "stationid": 194,
+        "name": "Sector 39/38 west",
+        "lat": 30.74746,
+        "lng": 76.73553
+      },
+      {
+        "stationid": 171,
+        "name": "Maloya",
+        "lat": 30.7522,
+        "lng": 76.7176
+      },
+      {
+        "stationid": 632,
+        "name": "Sector 39 Market",
+        "lat": 30.74344,
+        "lng": 76.7287
+      },
+      {
+        "stationid": 200,
+        "name": "Sector 40 Market",
+        "lat": 30.73807,
+        "lng": 76.73341
+      },
+      {
+        "stationid": 125,
+        "name": "Sector 41 Market Towards 42",
+        "lat": 30.73149,
+        "lng": 76.73837
+      },
+      {
+        "stationid": 32,
+        "name": "Sector 42 Market towards Sector 41",
+        "lat": 30.72539,
+        "lng": 76.74331
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 201,
+        "name": "Sector 44 Market towards 45",
+        "lat": 30.71319,
+        "lng": 76.75247
+      },
+      {
+        "stationid": 203,
+        "name": "Sector 45 Market",
+        "lat": 30.70595,
+        "lng": 76.75744
+      },
+      {
+        "stationid": 204,
+        "name": "Sector 46 Market (Down)",
+        "lat": 30.70228,
+        "lng": 76.76466
+      },
+      {
+        "stationid": 153,
+        "name": "Sector 47 Market - Up",
+        "lat": 30.69573,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 94,
+        "name": "Ram Darbar",
+        "lat": 30.69344,
+        "lng": 76.78826
+      }
+    ],
+    "schedule": {
+      "time_range": "05:45-21:25",
+      "frequency": "10 min",
+      "length_km": 38.4,
+      "num_buses": 12
+    }
+  },
+  {
+    "route_id": "5C",
+    "name": "Ram Darbar to Ram Darbar",
+    "description": "Via Sec-47 mkt, 46, 45, 44 mkts, ISBT-43, 42, 41, 40, 39 mkts, Maloya, 38W/39, 38/40, 38/37, 25/24, 14/15, Uni, PGI, 11/15, 10/16, 9/17, 8/18, 7/19, 26/27, 28/27, 29/30, 31/32, 47/46, 47 mkt",
+    "color": "#00BCD4",
+    "stops": [
+      {
+        "stationid": 94,
+        "name": "Ram Darbar",
+        "lat": 30.69344,
+        "lng": 76.78826
+      },
+      {
+        "stationid": 153,
+        "name": "Sector 47 Market - Up",
+        "lat": 30.69573,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 204,
+        "name": "Sector 46 Market (Down)",
+        "lat": 30.70228,
+        "lng": 76.76466
+      },
+      {
+        "stationid": 203,
+        "name": "Sector 45 Market",
+        "lat": 30.70595,
+        "lng": 76.75744
+      },
+      {
+        "stationid": 201,
+        "name": "Sector 44 Market towards 45",
+        "lat": 30.71319,
+        "lng": 76.75247
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 32,
+        "name": "Sector 42 Market towards Sector 41",
+        "lat": 30.72539,
+        "lng": 76.74331
+      },
+      {
+        "stationid": 125,
+        "name": "Sector 41 Market Towards 42",
+        "lat": 30.73149,
+        "lng": 76.73837
+      },
+      {
+        "stationid": 200,
+        "name": "Sector 40 Market",
+        "lat": 30.73807,
+        "lng": 76.73341
+      },
+      {
+        "stationid": 632,
+        "name": "Sector 39 Market",
+        "lat": 30.74344,
+        "lng": 76.7287
+      },
+      {
+        "stationid": 171,
+        "name": "Maloya",
+        "lat": 30.7522,
+        "lng": 76.7176
+      },
+      {
+        "stationid": 194,
+        "name": "Sector 39/38 west",
+        "lat": 30.74746,
+        "lng": 76.73553
+      },
+      {
+        "stationid": 192,
+        "name": "Sector 40/38",
+        "lat": 30.74342,
+        "lng": 76.73849
+      },
+      {
+        "stationid": 37,
+        "name": "Sector 38/37",
+        "lat": 30.74048,
+        "lng": 76.74642
+      },
+      {
+        "stationid": 191,
+        "name": "Sector 25/24",
+        "lat": 30.74781,
+        "lng": 76.75808
+      },
+      {
+        "stationid": 189,
+        "name": "Sector 14/15",
+        "lat": 30.75477,
+        "lng": 76.76917
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 118,
+        "name": "Sector 11/15",
+        "lat": 30.75663,
+        "lng": 76.77767
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 173,
+        "name": "Sector 17/9 K.C (Down)",
+        "lat": 30.74311,
+        "lng": 76.78887
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 89,
+        "name": "Sector 7/19",
+        "lat": 30.73128,
+        "lng": 76.7995
+      },
+      {
+        "stationid": 80,
+        "name": "Sector 26/27",
+        "lat": 30.72719,
+        "lng": 76.80326
+      },
+      {
+        "stationid": 186,
+        "name": "Sector 28/27",
+        "lat": 30.71989,
+        "lng": 76.80105
+      },
+      {
+        "stationid": 184,
+        "name": "Sector 29/30",
+        "lat": 30.71377,
+        "lng": 76.79134
+      },
+      {
+        "stationid": 181,
+        "name": "Sector 32/31",
+        "lat": 30.70607,
+        "lng": 76.77894
+      },
+      {
+        "stationid": 182,
+        "name": "SECTOR 47/46",
+        "lat": 30.69908,
+        "lng": 76.76801
+      },
+      {
+        "stationid": 153,
+        "name": "Sector 47 Market - Up",
+        "lat": 30.69573,
+        "lng": 76.7698
+      }
+    ],
+    "schedule": {
+      "time_range": "05:40-19:30",
+      "frequency": "10 min",
+      "length_km": 38.4,
+      "num_buses": 12
+    }
+  },
+  {
+    "route_id": "6",
+    "name": "New Maloya Colony to Raipur Kalan",
+    "description": "Via Maloya, 38west, 38Mkt, 37Mkt, 36/37, 41/42, Sec-42, ISBT-43, 43/44, 35/34, 34 Mkt, 33 Mkt, 32 Mkt, 31 Mkt, Ramdarbar, Tribune Chowk, Hallo Majra, Vikas Nagar",
+    "color": "#795548",
+    "stops": [
+      {
+        "stationid": 259,
+        "name": "New Maloya Colony",
+        "lat": 30.75985,
+        "lng": 76.71566
+      },
+      {
+        "stationid": 171,
+        "name": "Maloya",
+        "lat": 30.7522,
+        "lng": 76.7176
+      },
+      {
+        "stationid": 174,
+        "name": "Sector 38 West",
+        "lat": 30.75279,
+        "lng": 76.73758
+      },
+      {
+        "stationid": 360,
+        "name": "Sector 38 Market",
+        "lat": 30.74398,
+        "lng": 76.74525
+      },
+      {
+        "stationid": 33,
+        "name": "Sector 37 Market (Down)",
+        "lat": 30.73797,
+        "lng": 76.74946
+      },
+      {
+        "stationid": 286,
+        "name": "Sector 36/37",
+        "lat": 30.73495,
+        "lng": 76.75191
+      },
+      {
+        "stationid": 31,
+        "name": "Sector 41/42",
+        "lat": 30.73019,
+        "lng": 76.74052
+      },
+      {
+        "stationid": 32,
+        "name": "Sector 42 Market towards Sector 41",
+        "lat": 30.72539,
+        "lng": 76.74331
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 362,
+        "name": "Sector 34 Market",
+        "lat": 30.72028,
+        "lng": 76.76514
+      },
+      {
+        "stationid": 363,
+        "name": "Sector 33 Market",
+        "lat": 30.71425,
+        "lng": 76.76931
+      },
+      {
+        "stationid": 365,
+        "name": "Sector 32 Market",
+        "lat": 30.71051,
+        "lng": 76.7735
+      },
+      {
+        "stationid": 16,
+        "name": "Sector 31 Market",
+        "lat": 30.70537,
+        "lng": 76.78011
+      },
+      {
+        "stationid": 94,
+        "name": "Ram Darbar",
+        "lat": 30.69344,
+        "lng": 76.78826
+      },
+      {
+        "stationid": 12,
+        "name": "Tribune Chowk",
+        "lat": 30.70354,
+        "lng": 76.7897
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 381,
+        "name": "Vikas Nagar",
+        "lat": 30.69008,
+        "lng": 76.81407
+      }
+    ],
+    "schedule": {
+      "time_range": "05:50-18:35",
+      "frequency": "30 min",
+      "length_km": 25.5,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "7",
+    "name": "New Maloya Colony to Ramdarbar",
+    "description": "Via Maloya, 38West LP, 25/38, 25/24, 24 Mkt, 23 Mkt, 23/22, ISBT-17, Aroma, 21 Mkt, 20 Mkt, 30 Mkt, 29/30, GMCH-32, 31/32, SD-College, 46/47, 47 Mkt, Industrial Area Phase-2",
+    "color": "#607D8B",
+    "stops": [
+      {
+        "stationid": 259,
+        "name": "New Maloya Colony",
+        "lat": 30.75985,
+        "lng": 76.71566
+      },
+      {
+        "stationid": 171,
+        "name": "Maloya",
+        "lat": 30.7522,
+        "lng": 76.7176
+      },
+      {
+        "stationid": 174,
+        "name": "Sector 38 West",
+        "lat": 30.75279,
+        "lng": 76.73758
+      },
+      {
+        "stationid": 290,
+        "name": "Sector 38/25 Light Point",
+        "lat": 30.75071,
+        "lng": 76.74856
+      },
+      {
+        "stationid": 191,
+        "name": "Sector 25/24",
+        "lat": 30.74781,
+        "lng": 76.75808
+      },
+      {
+        "stationid": 370,
+        "name": "Sector 24 Market",
+        "lat": 30.74595,
+        "lng": 76.76135
+      },
+      {
+        "stationid": 369,
+        "name": "Sector 23 Market",
+        "lat": 30.73799,
+        "lng": 76.76666
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 66,
+        "name": "Sector 21 Market",
+        "lat": 30.72658,
+        "lng": 76.77692
+      },
+      {
+        "stationid": 69,
+        "name": "Sector 20 Market",
+        "lat": 30.72124,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 135,
+        "name": "Sector 30 Market",
+        "lat": 30.71524,
+        "lng": 76.78794
+      },
+      {
+        "stationid": 184,
+        "name": "Sector 29/30",
+        "lat": 30.71377,
+        "lng": 76.79134
+      },
+      {
+        "stationid": 17,
+        "name": "G.M.C.H. 32",
+        "lat": 30.70859,
+        "lng": 76.78304
+      },
+      {
+        "stationid": 181,
+        "name": "Sector 32/31",
+        "lat": 30.70607,
+        "lng": 76.77894
+      },
+      {
+        "stationid": 696,
+        "name": "Sector 32/31 S.D. College",
+        "lat": 30.70316,
+        "lng": 76.77439
+      },
+      {
+        "stationid": 180,
+        "name": "SECTOR 46/47",
+        "lat": 30.69882,
+        "lng": 76.76729
+      },
+      {
+        "stationid": 153,
+        "name": "Sector 47 Market - Up",
+        "lat": 30.69573,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 571,
+        "name": "Industrial Area Phase 2",
+        "lat": 30.69591,
+        "lng": 76.78643
+      }
+    ],
+    "schedule": {
+      "time_range": "06:45-18:20",
+      "frequency": "25 min",
+      "length_km": 21.5,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "9A",
+    "name": "Mansa Devi to Mansa Devi",
+    "description": "Via M/Majra, H.Board, R/Cross, R.Station, CTU W/Shop, 28/26 G/Mkt, 27/19, 30/20, 32/33, 46/45, 50/49, 64/63, 68/67, 67/80, Sec-66, Ph-11, 48/Jagatpura, 47 outer, R/Darbar, Ind.Area Ph-2, Tribune, 29, 28 P/Pump, CTU w/s, R/S, R/C, H.Board, M/Majra",
+    "color": "#FF5722",
+    "stops": [
+      {
+        "stationid": 88,
+        "name": "Mata Mansa Devi",
+        "lat": 30.72283,
+        "lng": 76.8582
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 242,
+        "name": "Sector 27/19",
+        "lat": 30.725,
+        "lng": 76.79506
+      },
+      {
+        "stationid": 330,
+        "name": "Sector 30/27",
+        "lat": 30.71821,
+        "lng": 76.79367
+      },
+      {
+        "stationid": 291,
+        "name": "Sector 32/33",
+        "lat": 30.7107,
+        "lng": 76.77224
+      },
+      {
+        "stationid": 284,
+        "name": "Sector 46/45",
+        "lat": 30.70486,
+        "lng": 76.76293
+      },
+      {
+        "stationid": 308,
+        "name": "Sector 50/51",
+        "lat": 30.70347,
+        "lng": 76.7463
+      },
+      {
+        "stationid": 225,
+        "name": "Sector 64/63",
+        "lat": 30.68859,
+        "lng": 76.73669
+      },
+      {
+        "stationid": 348,
+        "name": "Sector 68/67",
+        "lat": 30.68711,
+        "lng": 76.73196
+      },
+      {
+        "stationid": 430,
+        "name": "Sector 80/67",
+        "lat": 30.6781,
+        "lng": 76.72209
+      },
+      {
+        "stationid": 319,
+        "name": "Sector 66 Market",
+        "lat": 30.67343,
+        "lng": 76.73247
+      },
+      {
+        "stationid": 320,
+        "name": "Sector 65/Phase 11",
+        "lat": 30.67692,
+        "lng": 76.74873
+      },
+      {
+        "stationid": 337,
+        "name": "Sector 48/49 (U.T. Border) (Down)",
+        "lat": 30.68778,
+        "lng": 76.74991
+      },
+      {
+        "stationid": 155,
+        "name": "Sector 47 Outer Towards Ramdarbar",
+        "lat": 30.69254,
+        "lng": 76.77154
+      },
+      {
+        "stationid": 94,
+        "name": "Ram Darbar",
+        "lat": 30.69344,
+        "lng": 76.78826
+      },
+      {
+        "stationid": 571,
+        "name": "Industrial Area Phase 2",
+        "lat": 30.69591,
+        "lng": 76.78643
+      },
+      {
+        "stationid": 12,
+        "name": "Tribune Chowk",
+        "lat": 30.70354,
+        "lng": 76.7897
+      },
+      {
+        "stationid": 131,
+        "name": "Sector 29 Market (Up)",
+        "lat": 30.7097,
+        "lng": 76.79198
+      },
+      {
+        "stationid": 130,
+        "name": "Sector 28 Petrol Pump (Up)",
+        "lat": 30.71504,
+        "lng": 76.80811
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      }
+    ],
+    "schedule": {
+      "time_range": "06:10-20:30",
+      "frequency": "30 min",
+      "length_km": 37,
+      "num_buses": 4
+    }
+  },
+  {
+    "route_id": "9C",
+    "name": "Mansa Devi to Mansa Devi",
+    "description": "Via M.majra, H.B Chowk, R.Crossing, R.Station, CTU W/Shop 28 P.Pump, Ind.Area/29, Tribune, Ind.Area Ph-2, Ramdarbar, Outer47, Jagatpura, Ph-11, Sec-66, 80/67, 68/67, 63/64, 50/49, 45/46, 33/32, 20/30, 19/27, 26/27, G/Mkt-26, TPT/C, R.Crossing, HBC, Manimajra",
+    "color": "#3F51B5",
+    "stops": [
+      {
+        "stationid": 88,
+        "name": "Mata Mansa Devi",
+        "lat": 30.72283,
+        "lng": 76.8582
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 130,
+        "name": "Sector 28 Petrol Pump (Up)",
+        "lat": 30.71504,
+        "lng": 76.80811
+      },
+      {
+        "stationid": 136,
+        "name": "Sector 29/ Industrial Area Phase-1",
+        "lat": 30.71049,
+        "lng": 76.80008
+      },
+      {
+        "stationid": 12,
+        "name": "Tribune Chowk",
+        "lat": 30.70354,
+        "lng": 76.7897
+      },
+      {
+        "stationid": 571,
+        "name": "Industrial Area Phase 2",
+        "lat": 30.69591,
+        "lng": 76.78643
+      },
+      {
+        "stationid": 94,
+        "name": "Ram Darbar",
+        "lat": 30.69344,
+        "lng": 76.78826
+      },
+      {
+        "stationid": 155,
+        "name": "Sector 47 Outer Towards Ramdarbar",
+        "lat": 30.69254,
+        "lng": 76.77154
+      },
+      {
+        "stationid": 349,
+        "name": "Jagatpura/ 48 Motor Market",
+        "lat": 30.68547,
+        "lng": 76.76079
+      },
+      {
+        "stationid": 320,
+        "name": "Sector 65/Phase 11",
+        "lat": 30.67692,
+        "lng": 76.74873
+      },
+      {
+        "stationid": 319,
+        "name": "Sector 66 Market",
+        "lat": 30.67343,
+        "lng": 76.73247
+      },
+      {
+        "stationid": 430,
+        "name": "Sector 80/67",
+        "lat": 30.6781,
+        "lng": 76.72209
+      },
+      {
+        "stationid": 348,
+        "name": "Sector 68/67",
+        "lat": 30.68711,
+        "lng": 76.73196
+      },
+      {
+        "stationid": 225,
+        "name": "Sector 64/63",
+        "lat": 30.68859,
+        "lng": 76.73669
+      },
+      {
+        "stationid": 308,
+        "name": "Sector 50/51",
+        "lat": 30.70347,
+        "lng": 76.7463
+      },
+      {
+        "stationid": 285,
+        "name": "Sector 45/46",
+        "lat": 30.70502,
+        "lng": 76.7628
+      },
+      {
+        "stationid": 289,
+        "name": "Sector 33/32",
+        "lat": 30.71079,
+        "lng": 76.77212
+      },
+      {
+        "stationid": 330,
+        "name": "Sector 30/27",
+        "lat": 30.71821,
+        "lng": 76.79367
+      },
+      {
+        "stationid": 242,
+        "name": "Sector 27/19",
+        "lat": 30.725,
+        "lng": 76.79506
+      },
+      {
+        "stationid": 80,
+        "name": "Sector 26/27",
+        "lat": 30.72719,
+        "lng": 76.80326
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 458,
+        "name": "Transport Chowk (Down)",
+        "lat": 30.71822,
+        "lng": 76.81189
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      }
+    ],
+    "schedule": {
+      "time_range": "05:40-20:45",
+      "frequency": "30 min",
+      "length_km": 37,
+      "num_buses": 4
+    }
+  },
+  {
+    "route_id": "10",
+    "name": "ISBT-43 to Manimajra",
+    "description": "Via Sec-44/51, 45 Mkt, 46 Mkt, 47 mkts, Ram Darbar, Tribune Chowk, Poultry Farm, Colony No.4, CTU w/s, R/Station, Railway Crossing, H/B Chowk",
+    "color": "#009688",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 344,
+        "name": "Sector 44/51(Colony No. 5)",
+        "lat": 30.70893,
+        "lng": 76.74899
+      },
+      {
+        "stationid": 203,
+        "name": "Sector 45 Market",
+        "lat": 30.70595,
+        "lng": 76.75744
+      },
+      {
+        "stationid": 204,
+        "name": "Sector 46 Market (Down)",
+        "lat": 30.70228,
+        "lng": 76.76466
+      },
+      {
+        "stationid": 153,
+        "name": "Sector 47 Market - Up",
+        "lat": 30.69573,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 94,
+        "name": "Ram Darbar",
+        "lat": 30.69344,
+        "lng": 76.78826
+      },
+      {
+        "stationid": 12,
+        "name": "Tribune Chowk",
+        "lat": 30.70354,
+        "lng": 76.7897
+      },
+      {
+        "stationid": 339,
+        "name": "Paultry Farm",
+        "lat": 30.69604,
+        "lng": 76.8001
+      },
+      {
+        "stationid": 91,
+        "name": "Colony No. 4",
+        "lat": 30.70052,
+        "lng": 76.80334
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      }
+    ],
+    "schedule": {
+      "time_range": "05:25-20:35",
+      "frequency": "20 min",
+      "length_km": 17.5,
+      "num_buses": 7
+    }
+  },
+  {
+    "route_id": "11",
+    "name": "Railway Station to Civil Sectt.",
+    "description": "Via CTU W/shop, Sec-26 G/Mkt, 26/27, 7/19, 8/18, ISBT-17, UT Sectt., High Court",
+    "color": "#8BC34A",
+    "stops": [
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 80,
+        "name": "Sector 26/27",
+        "lat": 30.72719,
+        "lng": 76.80326
+      },
+      {
+        "stationid": 89,
+        "name": "Sector 7/19",
+        "lat": 30.73128,
+        "lng": 76.7995
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 176,
+        "name": "UT Secretariat Towards High Court",
+        "lat": 30.74989,
+        "lng": 76.79088
+      },
+      {
+        "stationid": 20,
+        "name": "High Court",
+        "lat": 30.7578,
+        "lng": 76.80278
+      }
+    ],
+    "schedule": {
+      "time_range": "08:35-16:40",
+      "frequency": "60 min",
+      "length_km": 15,
+      "num_buses": 2
+    }
+  },
+  {
+    "route_id": "11A",
+    "name": "Rock Garden to Sukhna Lake",
+    "description": "Via Bird Park",
+    "color": "#CDDC39",
+    "stops": [
+      {
+        "stationid": 615,
+        "name": "Rock garden towards lake",
+        "lat": 30.75133,
+        "lng": 76.8044
+      },
+      {
+        "stationid": 672,
+        "name": "Bird Park",
+        "lat": 30.74727,
+        "lng": 76.80786
+      },
+      {
+        "stationid": 256,
+        "name": "Sukhna Lake",
+        "lat": 30.74335,
+        "lng": 76.80886
+      }
+    ],
+    "schedule": {
+      "time_range": "10:10-15:50",
+      "frequency": "30 min",
+      "length_km": 3,
+      "num_buses": 1
+    }
+  },
+  {
+    "route_id": "14",
+    "name": "ISBT-43 to Mansa Devi",
+    "description": "Via 43/44, 35/34, 23/22, ISBT-17, 8/9, Lake Chowk, Kishangarh, IT Park, Mansa Devi Complex",
+    "color": "#E040FB",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 281,
+        "name": "Sector 8/9",
+        "lat": 30.74242,
+        "lng": 76.79438
+      },
+      {
+        "stationid": 680,
+        "name": "Lake Chowk",
+        "lat": 30.7408,
+        "lng": 76.80771
+      },
+      {
+        "stationid": 143,
+        "name": "Kishangarh Down",
+        "lat": 30.73093,
+        "lng": 76.83029
+      },
+      {
+        "stationid": 149,
+        "name": "IT Park (Down)",
+        "lat": 30.73026,
+        "lng": 76.84546
+      },
+      {
+        "stationid": 685,
+        "name": "Mansa Devi Complex",
+        "lat": 30.72067,
+        "lng": 76.85274
+      },
+      {
+        "stationid": 88,
+        "name": "Mata Mansa Devi",
+        "lat": 30.72283,
+        "lng": 76.8582
+      }
+    ],
+    "schedule": {
+      "time_range": "08:30-14:30",
+      "frequency": "60 min",
+      "length_km": 17,
+      "num_buses": 2
+    }
+  },
+  {
+    "route_id": "17",
+    "name": "ISBT-43 to Behlana",
+    "description": "Via 42/43, 36/35, 23/22, ISBT-17, Aroma, 21 Mkt, 20 Mkt, 30 Mkt, 29 Mkts, Elante Mall, Colony No.4, H/Majra, Behlana",
+    "color": "#FF6F00",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 66,
+        "name": "Sector 21 Market",
+        "lat": 30.72658,
+        "lng": 76.77692
+      },
+      {
+        "stationid": 69,
+        "name": "Sector 20 Market",
+        "lat": 30.72124,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 135,
+        "name": "Sector 30 Market",
+        "lat": 30.71524,
+        "lng": 76.78794
+      },
+      {
+        "stationid": 131,
+        "name": "Sector 29 Market (Up)",
+        "lat": 30.7097,
+        "lng": 76.79198
+      },
+      {
+        "stationid": 96,
+        "name": "Elante Mall (Down)",
+        "lat": 30.70589,
+        "lng": 76.79668
+      },
+      {
+        "stationid": 91,
+        "name": "Colony No. 4",
+        "lat": 30.70052,
+        "lng": 76.80334
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 7,
+        "name": "Behlana Old Airport",
+        "lat": 30.67522,
+        "lng": 76.79857
+      }
+    ],
+    "schedule": {
+      "time_range": "05:35-19:00",
+      "frequency": "15 min",
+      "length_km": 15.5,
+      "num_buses": 8
+    }
+  },
+  {
+    "route_id": "18",
+    "name": "ISBT-43 to Kaimbwala",
+    "description": "Via 42/43, Attawa, 36/35, 23/22, 17 B/S, 17/18, 9/8, 9 mkt, MLA Flat, Pb.Civil.Sectt, H/Court, Lake, Kaimbwala",
+    "color": "#1B5E20",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 81,
+        "name": "Sector 17/18",
+        "lat": 30.73432,
+        "lng": 76.78109
+      },
+      {
+        "stationid": 280,
+        "name": "Sector 9/8",
+        "lat": 30.74256,
+        "lng": 76.79419
+      },
+      {
+        "stationid": 428,
+        "name": "Sector 9 Market (Down)",
+        "lat": 30.74732,
+        "lng": 76.79394
+      },
+      {
+        "stationid": 2,
+        "name": "MLA Flats (Up)",
+        "lat": 30.7547,
+        "lng": 76.79857
+      },
+      {
+        "stationid": 36,
+        "name": "Punjab Civil Secratariat",
+        "lat": 30.76268,
+        "lng": 76.79969
+      },
+      {
+        "stationid": 20,
+        "name": "High Court",
+        "lat": 30.7578,
+        "lng": 76.80278
+      },
+      {
+        "stationid": 256,
+        "name": "Sukhna Lake",
+        "lat": 30.74335,
+        "lng": 76.80886
+      },
+      {
+        "stationid": 152,
+        "name": "Kaimbwala 2",
+        "lat": 30.75668,
+        "lng": 76.82146
+      },
+      {
+        "stationid": 151,
+        "name": "Kaimbwala 1",
+        "lat": 30.75641,
+        "lng": 76.82911
+      }
+    ],
+    "schedule": {
+      "time_range": "06:10-20:15",
+      "frequency": "30 min",
+      "length_km": 15.5,
+      "num_buses": 4
+    }
+  },
+  {
+    "route_id": "20",
+    "name": "Chandigarh to Kharar",
+    "description": "Via Aroma, Sec-21 Mkt, 20/21, 33/34, 44/45, ISBT-43, YPS, Ph-7, Sohana, Lakhnaur, Landran, Chappar Chiri, Sante Majra",
+    "color": "#880E4F",
+    "stops": [
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 66,
+        "name": "Sector 21 Market",
+        "lat": 30.72658,
+        "lng": 76.77692
+      },
+      {
+        "stationid": 459,
+        "name": "sector 20/21",
+        "lat": 30.72361,
+        "lng": 76.77847
+      },
+      {
+        "stationid": 392,
+        "name": "Sector 33/34",
+        "lat": 30.71656,
+        "lng": 76.76736
+      },
+      {
+        "stationid": 282,
+        "name": "Sector 44/45",
+        "lat": 30.70886,
+        "lng": 76.75462
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 98,
+        "name": "YPS CHOWK (Down)",
+        "lat": 30.70591,
+        "lng": 76.7352
+      },
+      {
+        "stationid": 312,
+        "name": "Phase-7 (Down)",
+        "lat": 30.70394,
+        "lng": 76.72697
+      },
+      {
+        "stationid": 97,
+        "name": "Sohana",
+        "lat": 30.69122,
+        "lng": 76.70987
+      },
+      {
+        "stationid": 271,
+        "name": "Lakhnaur",
+        "lat": 30.69476,
+        "lng": 76.68441
+      },
+      {
+        "stationid": 123,
+        "name": "Landran (Down)",
+        "lat": 30.69139,
+        "lng": 76.66531
+      },
+      {
+        "stationid": 274,
+        "name": "Chappar Chiri",
+        "lat": 30.70927,
+        "lng": 76.65721
+      },
+      {
+        "stationid": 275,
+        "name": "Santemajra",
+        "lat": 30.72083,
+        "lng": 76.65271
+      },
+      {
+        "stationid": 24,
+        "name": "Kharar",
+        "lat": 30.75163,
+        "lng": 76.63874
+      }
+    ],
+    "schedule": {
+      "time_range": "05:30-20:45",
+      "frequency": "15-30 min",
+      "length_km": 25.6,
+      "num_buses": 9
+    }
+  },
+  {
+    "route_id": "22",
+    "name": "ISBT-43 to IT Park",
+    "description": "Via 42/43, 36/35, 23/22, ISBT-17, 17/18 L/Point, 18, 19, 27, 28 mkts, CTU w/s, R/Station, R/Crossing, H/B Chowk, M/Majra, Kishangarh",
+    "color": "#0D47A1",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 81,
+        "name": "Sector 17/18",
+        "lat": 30.73432,
+        "lng": 76.78109
+      },
+      {
+        "stationid": 114,
+        "name": "Sector 18 Market (Down)",
+        "lat": 30.73339,
+        "lng": 76.78867
+      },
+      {
+        "stationid": 121,
+        "name": "Sector 19 Market (Down)",
+        "lat": 30.72863,
+        "lng": 76.79264
+      },
+      {
+        "stationid": 126,
+        "name": "Sector 27 Market (Down)",
+        "lat": 30.72279,
+        "lng": 76.79879
+      },
+      {
+        "stationid": 134,
+        "name": "Sector 28 Market (Down)",
+        "lat": 30.71731,
+        "lng": 76.8035
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 143,
+        "name": "Kishangarh Down",
+        "lat": 30.73093,
+        "lng": 76.83029
+      },
+      {
+        "stationid": 149,
+        "name": "IT Park (Down)",
+        "lat": 30.73026,
+        "lng": 76.84546
+      }
+    ],
+    "schedule": {
+      "time_range": "05:40-20:30",
+      "frequency": "20 min",
+      "length_km": 19.6,
+      "num_buses": 7
+    }
+  },
+  {
+    "route_id": "23A",
+    "name": "ISBT-43 to Khuda Ali Sher",
+    "description": "Via 43/44, 35/34, Aroma, 22/17, 16/17, 16/10, 15/11, PGI, New OPD, PEC, Naya Gaon",
+    "color": "#00695C",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 552,
+        "name": "Sector 22/17",
+        "lat": 30.73597,
+        "lng": 76.7774
+      },
+      {
+        "stationid": 59,
+        "name": "Sector 16/17",
+        "lat": 30.74208,
+        "lng": 76.77813
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 119,
+        "name": "Sector 15/11",
+        "lat": 30.75437,
+        "lng": 76.77931
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 146,
+        "name": "New OPD (Up)",
+        "lat": 30.76182,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 49,
+        "name": "Punjab Engineering College (PEC)",
+        "lat": 30.7639,
+        "lng": 76.78535
+      },
+      {
+        "stationid": 261,
+        "name": "Naya Gaon",
+        "lat": 30.76927,
+        "lng": 76.79225
+      },
+      {
+        "stationid": 338,
+        "name": "Khuda Alisher",
+        "lat": 30.77312,
+        "lng": 76.80892
+      }
+    ],
+    "schedule": {
+      "time_range": "05:30-21:30",
+      "frequency": "15 min",
+      "length_km": 12.8,
+      "num_buses": 8
+    }
+  },
+  {
+    "route_id": "26",
+    "name": "Mullanpur Eco City to Dhakoli",
+    "description": "Via Mullanpur, S.P.Barrier, K.Lahora, PGI, OPD, 2/11, 10/11, 10/16, ISBT-17, 19/20, 28 P.P., CTU w/s, R/S, Colony No.4, Hallo Majra, Airport, Zirakpur, Dhakoli",
+    "color": "#33691E",
+    "stops": [
+      {
+        "stationid": 624,
+        "name": "ECO City New Chandigarh",
+        "lat": 30.81707,
+        "lng": 76.73267
+      },
+      {
+        "stationid": 154,
+        "name": "Mullanpur",
+        "lat": 30.80163,
+        "lng": 76.74338
+      },
+      {
+        "stationid": 72,
+        "name": "Sarangpur Barrier (Down)",
+        "lat": 30.78638,
+        "lng": 76.75563
+      },
+      {
+        "stationid": 70,
+        "name": "Khuda Lahora (Down)",
+        "lat": 30.77572,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 146,
+        "name": "New OPD (Up)",
+        "lat": 30.76182,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 995,
+        "name": "Sector 2/11A PEC",
+        "lat": 30.76449,
+        "lng": 76.78788
+      },
+      {
+        "stationid": 611,
+        "name": "Sector 11/10",
+        "lat": 30.758,
+        "lng": 76.78859
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 326,
+        "name": "Sector 19/20",
+        "lat": 30.7252,
+        "lng": 76.78726
+      },
+      {
+        "stationid": 130,
+        "name": "Sector 28 Petrol Pump (Up)",
+        "lat": 30.71504,
+        "lng": 76.80811
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 91,
+        "name": "Colony No. 4",
+        "lat": 30.70052,
+        "lng": 76.80334
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 161,
+        "name": "New Airport",
+        "lat": 30.66836,
+        "lng": 76.78508
+      },
+      {
+        "stationid": 45,
+        "name": "Zirakpur (Down)",
+        "lat": 30.65884,
+        "lng": 76.82052
+      },
+      {
+        "stationid": 340,
+        "name": "Dhakoli",
+        "lat": 30.65539,
+        "lng": 76.8441
+      }
+    ],
+    "schedule": {
+      "time_range": "06:00-19:25",
+      "frequency": "35 min",
+      "length_km": 32,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "28",
+    "name": "New Maloya Colony to Manimajra",
+    "description": "Via Maloya, Daddu Majra Village, 38w, 38Mkt, 37Mkt, 36Mkt, 36/35, 23/22, ISBT-17, 8/18, 7/19, 26/28, 26-G/Mkt, CTU w/s, R/Station, Kalagram, H.Board",
+    "color": "#BF360C",
+    "stops": [
+      {
+        "stationid": 259,
+        "name": "New Maloya Colony",
+        "lat": 30.75985,
+        "lng": 76.71566
+      },
+      {
+        "stationid": 171,
+        "name": "Maloya",
+        "lat": 30.7522,
+        "lng": 76.7176
+      },
+      {
+        "stationid": 137,
+        "name": "Dadu Majra Village",
+        "lat": 30.75939,
+        "lng": 76.73487
+      },
+      {
+        "stationid": 174,
+        "name": "Sector 38 West",
+        "lat": 30.75279,
+        "lng": 76.73758
+      },
+      {
+        "stationid": 360,
+        "name": "Sector 38 Market",
+        "lat": 30.74398,
+        "lng": 76.74525
+      },
+      {
+        "stationid": 33,
+        "name": "Sector 37 Market (Down)",
+        "lat": 30.73797,
+        "lng": 76.74946
+      },
+      {
+        "stationid": 372,
+        "name": "Sector 36 Market",
+        "lat": 30.73139,
+        "lng": 76.75494
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 89,
+        "name": "Sector 7/19",
+        "lat": 30.73128,
+        "lng": 76.7995
+      },
+      {
+        "stationid": 128,
+        "name": "Sector 28/26 Grain Market",
+        "lat": 30.7224,
+        "lng": 76.80765
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 145,
+        "name": "Kalagram Down",
+        "lat": 30.7097,
+        "lng": 76.82869
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      }
+    ],
+    "schedule": {
+      "time_range": "06:15-20:00",
+      "frequency": "30 min",
+      "length_km": 26,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "28A",
+    "name": "ISBT-43 to Rani Majra",
+    "description": "Via 43/44, 35/34, 23/22, ISBT-17, 17/9 KC, 16/10, 11/15, PGI, Khuda Lahora, S.P.Barrier, Mullanpur, ECO-City, DLF Chowk, Todde Majra, Rasulpur, Omax Phase-II",
+    "color": "#AD1457",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 173,
+        "name": "Sector 17/9 K.C (Down)",
+        "lat": 30.74311,
+        "lng": 76.78887
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 118,
+        "name": "Sector 11/15",
+        "lat": 30.75663,
+        "lng": 76.77767
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 70,
+        "name": "Khuda Lahora (Down)",
+        "lat": 30.77572,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 72,
+        "name": "Sarangpur Barrier (Down)",
+        "lat": 30.78638,
+        "lng": 76.75563
+      },
+      {
+        "stationid": 154,
+        "name": "Mullanpur",
+        "lat": 30.80163,
+        "lng": 76.74338
+      },
+      {
+        "stationid": 624,
+        "name": "ECO City New Chandigarh",
+        "lat": 30.81707,
+        "lng": 76.73267
+      },
+      {
+        "stationid": 689,
+        "name": "DLF Chowk",
+        "lat": 30.81069,
+        "lng": 76.73015
+      },
+      {
+        "stationid": 690,
+        "name": "Doda Majra",
+        "lat": 30.81014,
+        "lng": 76.72105
+      },
+      {
+        "stationid": 691,
+        "name": "Rasulpur",
+        "lat": 30.81044,
+        "lng": 76.71691
+      },
+      {
+        "stationid": 692,
+        "name": "Omax Phase-II",
+        "lat": 30.80941,
+        "lng": 76.70632
+      }
+    ],
+    "schedule": {
+      "time_range": "07:10-19:15",
+      "frequency": "75 min",
+      "length_km": 23,
+      "num_buses": 2
+    }
+  },
+  {
+    "route_id": "28B",
+    "name": "ISBT-43 to Eco City Block-2 (Takipur)",
+    "description": "Via 42/43, Attawa, 36/35, 37/24, 38/25, DMC, Dhanas, S/P Barrier, Mullanpur, Homi Bhaba, Parol, Majra, Hosiarpur, Eco City",
+    "color": "#4A148C",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 197,
+        "name": "Sector 37/24",
+        "lat": 30.74123,
+        "lng": 76.75654
+      },
+      {
+        "stationid": 290,
+        "name": "Sector 38/25 Light Point",
+        "lat": 30.75071,
+        "lng": 76.74856
+      },
+      {
+        "stationid": 577,
+        "name": "Depot 3 Workshop",
+        "lat": 30.75378,
+        "lng": 76.74884
+      },
+      {
+        "stationid": 101,
+        "name": "Dhanas (Down)",
+        "lat": 30.76946,
+        "lng": 76.75026
+      },
+      {
+        "stationid": 72,
+        "name": "Sarangpur Barrier (Down)",
+        "lat": 30.78638,
+        "lng": 76.75563
+      },
+      {
+        "stationid": 154,
+        "name": "Mullanpur",
+        "lat": 30.80163,
+        "lng": 76.74338
+      },
+      {
+        "stationid": 668,
+        "name": "Homi Bhabha Hospital",
+        "lat": 30.81583,
+        "lng": 76.7382
+      },
+      {
+        "stationid": 277,
+        "name": "Paroul (Down)",
+        "lat": 30.82784,
+        "lng": 76.73149
+      },
+      {
+        "stationid": 279,
+        "name": "Majra/Siswan T/P",
+        "lat": 30.84587,
+        "lng": 76.72057
+      },
+      {
+        "stationid": 703,
+        "name": "Hoshiarpur",
+        "lat": 30.83573,
+        "lng": 76.72421
+      },
+      {
+        "stationid": 624,
+        "name": "ECO City New Chandigarh",
+        "lat": 30.81707,
+        "lng": 76.73267
+      },
+      {
+        "stationid": 983,
+        "name": "Eco City-2 Block C Takipur",
+        "lat": 30.82979,
+        "lng": 76.71605
+      }
+    ],
+    "schedule": {
+      "time_range": "06:50-19:20",
+      "frequency": "25 min",
+      "length_km": 23,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "30",
+    "name": "ISBT-43 to Nada Sahib",
+    "description": "Via 42/43, Attawa, 36/35, 23/22, ISBT-17, Aroma, 21, 20 Mkts, 19 Mkt, 19/27, 26/27, G.Mkt-26, R/C, Kalagram, H.Board, Manimajra, Command Hospital, Majri Chowk",
+    "color": "#1A237E",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 66,
+        "name": "Sector 21 Market",
+        "lat": 30.72658,
+        "lng": 76.77692
+      },
+      {
+        "stationid": 69,
+        "name": "Sector 20 Market",
+        "lat": 30.72124,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 199,
+        "name": "Sector 19/27",
+        "lat": 30.72508,
+        "lng": 76.79494
+      },
+      {
+        "stationid": 80,
+        "name": "Sector 26/27",
+        "lat": 30.72719,
+        "lng": 76.80326
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 145,
+        "name": "Kalagram Down",
+        "lat": 30.7097,
+        "lng": 76.82869
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 92,
+        "name": "Command Hospital (Down)",
+        "lat": 30.71087,
+        "lng": 76.85463
+      },
+      {
+        "stationid": 557,
+        "name": "Majri Chowk",
+        "lat": 30.69965,
+        "lng": 76.87275
+      },
+      {
+        "stationid": 120,
+        "name": "Nada Sahib",
+        "lat": 30.69501,
+        "lng": 76.88289
+      }
+    ],
+    "schedule": {
+      "time_range": "06:05-19:55",
+      "frequency": "25-30 min",
+      "length_km": 21.5,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "30A",
+    "name": "ISBT-43 to Cantonment",
+    "description": "Via 42/43, Attawa, 36/35, K/Bhawan, 22/35, 21/34, 20/33, 30/32, 29/31, Tribune, H/Majra, Colony No.4, CTU w/s, R/Station, R/Crossing, Kalagram, H.B Chowk, Fun Republic, Command Hospital, Tank Chowk",
+    "color": "#311B92",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 678,
+        "name": "Sector 35/36 Kissan bhawan",
+        "lat": 30.73243,
+        "lng": 76.76231
+      },
+      {
+        "stationid": 255,
+        "name": "Sector 22/35",
+        "lat": 30.73174,
+        "lng": 76.7639
+      },
+      {
+        "stationid": 253,
+        "name": "Sector 34/21",
+        "lat": 30.72143,
+        "lng": 76.77233
+      },
+      {
+        "stationid": 264,
+        "name": "Sector 20/33",
+        "lat": 30.71934,
+        "lng": 76.77462
+      },
+      {
+        "stationid": 249,
+        "name": "Sector 32/30 Hospital",
+        "lat": 30.7113,
+        "lng": 76.78155
+      },
+      {
+        "stationid": 247,
+        "name": "Sector 29/31 (Tribune)",
+        "lat": 30.70814,
+        "lng": 76.78497
+      },
+      {
+        "stationid": 12,
+        "name": "Tribune Chowk",
+        "lat": 30.70354,
+        "lng": 76.7897
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 91,
+        "name": "Colony No. 4",
+        "lat": 30.70052,
+        "lng": 76.80334
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 145,
+        "name": "Kalagram Down",
+        "lat": 30.7097,
+        "lng": 76.82869
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 425,
+        "name": "Mani Majra Fun Republic",
+        "lat": 30.71211,
+        "lng": 76.84389
+      },
+      {
+        "stationid": 92,
+        "name": "Command Hospital (Down)",
+        "lat": 30.71087,
+        "lng": 76.85463
+      },
+      {
+        "stationid": 266,
+        "name": "Tank Chowk",
+        "lat": 30.7074,
+        "lng": 76.86459
+      },
+      {
+        "stationid": 25,
+        "name": "Cantonment",
+        "lat": 30.72137,
+        "lng": 76.87465
+      }
+    ],
+    "schedule": {
+      "time_range": "05:10-20:45",
+      "frequency": "30 min",
+      "length_km": 21.1,
+      "num_buses": 5
+    }
+  },
+  {
+    "route_id": "30B",
+    "name": "ISBT-43 to Ramgarh",
+    "description": "Via 42/43, Attawa, 36/35, 23/22, ISBT-17, Aroma, 21 Mkt, 20 Mkts, 19/27, 27 Mkt, G.Mkt-26, R/C, Kalagram, H.Board, 11/15 Pkl, 12/11 Pkl, Rally Chowk, Sec-4 Pkl, Nada Sahib",
+    "color": "#827717",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 66,
+        "name": "Sector 21 Market",
+        "lat": 30.72658,
+        "lng": 76.77692
+      },
+      {
+        "stationid": 69,
+        "name": "Sector 20 Market",
+        "lat": 30.72124,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 199,
+        "name": "Sector 19/27",
+        "lat": 30.72508,
+        "lng": 76.79494
+      },
+      {
+        "stationid": 126,
+        "name": "Sector 27 Market (Down)",
+        "lat": 30.72279,
+        "lng": 76.79879
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 145,
+        "name": "Kalagram Down",
+        "lat": 30.7097,
+        "lng": 76.82869
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 267,
+        "name": "Sector 11/10 Panchkula",
+        "lat": 30.68787,
+        "lng": 76.85056
+      },
+      {
+        "stationid": 116,
+        "name": "Sector 11/12 Rally Chowk Panchkula",
+        "lat": 30.6805,
+        "lng": 76.85212
+      },
+      {
+        "stationid": 300,
+        "name": "Sector 4 Panchkula",
+        "lat": 30.69077,
+        "lng": 76.86047
+      },
+      {
+        "stationid": 120,
+        "name": "Nada Sahib",
+        "lat": 30.69501,
+        "lng": 76.88289
+      },
+      {
+        "stationid": 406,
+        "name": "Ramgarh",
+        "lat": 30.64676,
+        "lng": 76.88557
+      }
+    ],
+    "schedule": {
+      "time_range": "06:30-19:00",
+      "frequency": "25 min",
+      "length_km": 31,
+      "num_buses": 8
+    }
+  },
+  {
+    "route_id": "32",
+    "name": "PGI to Derabassi",
+    "description": "Via OPD, Sec-11/10, 10/16, 17/16, ISBT-17, 8/18, 7/19, 26/28, G.Mkt-26, R/C, H/B, M/Majra, Old Pkl, Nada Sahib, Ramgarh, Mubarakpur",
+    "color": "#E65100",
+    "stops": [
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 611,
+        "name": "Sector 11/10",
+        "lat": 30.758,
+        "lng": 76.78859
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 60,
+        "name": "Sector 17/16",
+        "lat": 30.74193,
+        "lng": 76.77829
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 89,
+        "name": "Sector 7/19",
+        "lat": 30.73128,
+        "lng": 76.7995
+      },
+      {
+        "stationid": 128,
+        "name": "Sector 28/26 Grain Market",
+        "lat": 30.7224,
+        "lng": 76.80765
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 34,
+        "name": "Old Panchkula (PKL)",
+        "lat": 30.70714,
+        "lng": 76.87327
+      },
+      {
+        "stationid": 120,
+        "name": "Nada Sahib",
+        "lat": 30.69501,
+        "lng": 76.88289
+      },
+      {
+        "stationid": 406,
+        "name": "Ramgarh",
+        "lat": 30.64676,
+        "lng": 76.88557
+      },
+      {
+        "stationid": 270,
+        "name": "Mubarkpur",
+        "lat": 30.61309,
+        "lng": 76.85136
+      },
+      {
+        "stationid": 23,
+        "name": "Dera Bassi",
+        "lat": 30.58495,
+        "lng": 76.84404
+      }
+    ],
+    "schedule": {
+      "time_range": "05:00-20:55",
+      "frequency": "15-30 min",
+      "length_km": 37.7,
+      "num_buses": 14
+    }
+  },
+  {
+    "route_id": "34",
+    "name": "PGI to Derabassi",
+    "description": "Via OPD, PEC, 10/16, ISBT-17, Aroma, Piccadilly Chowk, 21/34, 20/33, 30/32, 29/31, Hallo Majra, Airport, Zirakpur, Bhankarpur, Mubarakpur",
+    "color": "#F57F17",
+    "stops": [
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 49,
+        "name": "Punjab Engineering College (PEC)",
+        "lat": 30.7639,
+        "lng": 76.78535
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 581,
+        "name": "picardly chowk",
+        "lat": 30.72629,
+        "lng": 76.76831
+      },
+      {
+        "stationid": 253,
+        "name": "Sector 34/21",
+        "lat": 30.72143,
+        "lng": 76.77233
+      },
+      {
+        "stationid": 264,
+        "name": "Sector 20/33",
+        "lat": 30.71934,
+        "lng": 76.77462
+      },
+      {
+        "stationid": 249,
+        "name": "Sector 32/30 Hospital",
+        "lat": 30.7113,
+        "lng": 76.78155
+      },
+      {
+        "stationid": 247,
+        "name": "Sector 29/31 (Tribune)",
+        "lat": 30.70814,
+        "lng": 76.78497
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 161,
+        "name": "New Airport",
+        "lat": 30.66836,
+        "lng": 76.78508
+      },
+      {
+        "stationid": 45,
+        "name": "Zirakpur (Down)",
+        "lat": 30.65884,
+        "lng": 76.82052
+      },
+      {
+        "stationid": 140,
+        "name": "Bhankarpur (Up)",
+        "lat": 30.6066,
+        "lng": 76.83722
+      },
+      {
+        "stationid": 270,
+        "name": "Mubarkpur",
+        "lat": 30.61309,
+        "lng": 76.85136
+      },
+      {
+        "stationid": 23,
+        "name": "Dera Bassi",
+        "lat": 30.58495,
+        "lng": 76.84404
+      }
+    ],
+    "schedule": {
+      "time_range": "06:15-19:25",
+      "frequency": "20 min",
+      "length_km": 28,
+      "num_buses": 9
+    }
+  },
+  {
+    "route_id": "35",
+    "name": "ISBT-17 to Kharar",
+    "description": "Via Aroma, 35/22, Kissan Bhawan, 35/36, Attawa, 36/37, 40/41, F/Chowk, Ph-2, Ph-6, Balongi, Daun, Desu Majra, Mundi Kharar",
+    "color": "#006064",
+    "stops": [
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 254,
+        "name": "Sector 35/22",
+        "lat": 30.72744,
+        "lng": 76.76736
+      },
+      {
+        "stationid": 580,
+        "name": "Kishan bhavan",
+        "lat": 30.73294,
+        "lng": 76.76302
+      },
+      {
+        "stationid": 63,
+        "name": "Sector 35/36 Flower Market",
+        "lat": 30.72877,
+        "lng": 76.75648
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 286,
+        "name": "Sector 36/37",
+        "lat": 30.73495,
+        "lng": 76.75191
+      },
+      {
+        "stationid": 209,
+        "name": "Sector 40/41",
+        "lat": 30.73529,
+        "lng": 76.73782
+      },
+      {
+        "stationid": 276,
+        "name": "Furniture Chowk(UT Border)",
+        "lat": 30.72729,
+        "lng": 76.73384
+      },
+      {
+        "stationid": 170,
+        "name": "Phase-6 (U.T Border) A",
+        "lat": 30.7382,
+        "lng": 76.71463
+      },
+      {
+        "stationid": 141,
+        "name": "Balongi",
+        "lat": 30.73351,
+        "lng": 76.6954
+      },
+      {
+        "stationid": 162,
+        "name": "Daun (Down)",
+        "lat": 30.73797,
+        "lng": 76.68208
+      },
+      {
+        "stationid": 166,
+        "name": "Desu Majra",
+        "lat": 30.74144,
+        "lng": 76.6712
+      },
+      {
+        "stationid": 24,
+        "name": "Kharar",
+        "lat": 30.75163,
+        "lng": 76.63874
+      }
+    ],
+    "schedule": {
+      "time_range": "05:40-22:20",
+      "frequency": "20 min",
+      "length_km": 18.3,
+      "num_buses": 5
+    }
+  },
+  {
+    "route_id": "35B",
+    "name": "ISBT-17 to Kharar",
+    "description": "Via Aroma, 35/22, Kissan Bhawan, 35/36, Attawa, ISBT-43, F/Chowk, Ph-2, Ph-6, Balongi, Daun, Desu Majra, Mundi Kharar",
+    "color": "#004D40",
+    "stops": [
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 254,
+        "name": "Sector 35/22",
+        "lat": 30.72744,
+        "lng": 76.76736
+      },
+      {
+        "stationid": 580,
+        "name": "Kishan bhavan",
+        "lat": 30.73294,
+        "lng": 76.76302
+      },
+      {
+        "stationid": 63,
+        "name": "Sector 35/36 Flower Market",
+        "lat": 30.72877,
+        "lng": 76.75648
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 276,
+        "name": "Furniture Chowk(UT Border)",
+        "lat": 30.72729,
+        "lng": 76.73384
+      },
+      {
+        "stationid": 170,
+        "name": "Phase-6 (U.T Border) A",
+        "lat": 30.7382,
+        "lng": 76.71463
+      },
+      {
+        "stationid": 141,
+        "name": "Balongi",
+        "lat": 30.73351,
+        "lng": 76.6954
+      },
+      {
+        "stationid": 162,
+        "name": "Daun (Down)",
+        "lat": 30.73797,
+        "lng": 76.68208
+      },
+      {
+        "stationid": 166,
+        "name": "Desu Majra",
+        "lat": 30.74144,
+        "lng": 76.6712
+      },
+      {
+        "stationid": 24,
+        "name": "Kharar",
+        "lat": 30.75163,
+        "lng": 76.63874
+      }
+    ],
+    "schedule": {
+      "time_range": "05:20-22:00",
+      "frequency": "10-20 min",
+      "length_km": 19.2,
+      "num_buses": 9
+    }
+  },
+  {
+    "route_id": "39",
+    "name": "Mohali Ph-11 to PGI",
+    "description": "Via Mohali Rly Stn, Ind.Area Ph-9, Sec-66/67, 67/68, 68 outer, 69/68, Kumbra, Fortis, Ph-7, Chawla Chowk, 60/61, 52/61, YPS, ISBT-43, 42/43, 36/35, 23/22, ISBT-17, 22/17, 16/10, 11/10, PEC, OPD",
+    "color": "#263238",
+    "stops": [
+      {
+        "stationid": 320,
+        "name": "Sector 65/Phase 11",
+        "lat": 30.67692,
+        "lng": 76.74873
+      },
+      {
+        "stationid": 355,
+        "name": "Railway Station (Mohali)",
+        "lat": 30.66655,
+        "lng": 76.73947
+      },
+      {
+        "stationid": 354,
+        "name": "Sector 63/Phase-9",
+        "lat": 30.69264,
+        "lng": 76.73473
+      },
+      {
+        "stationid": 319,
+        "name": "Sector 66 Market",
+        "lat": 30.67343,
+        "lng": 76.73247
+      },
+      {
+        "stationid": 226,
+        "name": "Sector 67/68",
+        "lat": 30.68063,
+        "lng": 76.72426
+      },
+      {
+        "stationid": 245,
+        "name": "Sector 69/68",
+        "lat": 30.69032,
+        "lng": 76.72322
+      },
+      {
+        "stationid": 314,
+        "name": "Fortis Hospital",
+        "lat": 30.69383,
+        "lng": 76.73081
+      },
+      {
+        "stationid": 312,
+        "name": "Phase-7 (Down)",
+        "lat": 30.70394,
+        "lng": 76.72697
+      },
+      {
+        "stationid": 311,
+        "name": "Chawala Hospital Chowk (Down)",
+        "lat": 30.70843,
+        "lng": 76.7239
+      },
+      {
+        "stationid": 212,
+        "name": "Sector 61/62",
+        "lat": 30.7016,
+        "lng": 76.7284
+      },
+      {
+        "stationid": 99,
+        "name": "YPS/Sector 61/52",
+        "lat": 30.709,
+        "lng": 76.73128
+      },
+      {
+        "stationid": 98,
+        "name": "YPS CHOWK (Down)",
+        "lat": 30.70591,
+        "lng": 76.7352
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 552,
+        "name": "Sector 22/17",
+        "lat": 30.73597,
+        "lng": 76.7774
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 611,
+        "name": "Sector 11/10",
+        "lat": 30.758,
+        "lng": 76.78859
+      },
+      {
+        "stationid": 49,
+        "name": "Punjab Engineering College (PEC)",
+        "lat": 30.7639,
+        "lng": 76.78535
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      }
+    ],
+    "schedule": {
+      "time_range": "05:50-21:20",
+      "frequency": "15 min",
+      "length_km": 27.5,
+      "num_buses": 12
+    }
+  },
+  {
+    "route_id": "71",
+    "name": "ISBT-43 to Saketri (Kaimbwala)",
+    "description": "Via 43/44, 35/34, K.Bhawan, 23/22, ISBT-17, 18, 19, 27 Mkts, G/Mkt, R/Crossing, M/M Complex, M/M Town, M/Majra, Swastik Vihar, Mansa Devi, Saketri",
+    "color": "#546E7A",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 580,
+        "name": "Kishan bhavan",
+        "lat": 30.73294,
+        "lng": 76.76302
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 114,
+        "name": "Sector 18 Market (Down)",
+        "lat": 30.73339,
+        "lng": 76.78867
+      },
+      {
+        "stationid": 121,
+        "name": "Sector 19 Market (Down)",
+        "lat": 30.72863,
+        "lng": 76.79264
+      },
+      {
+        "stationid": 126,
+        "name": "Sector 27 Market (Down)",
+        "lat": 30.72279,
+        "lng": 76.79879
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 150,
+        "name": "Modern Complex",
+        "lat": 30.71616,
+        "lng": 76.83102
+      },
+      {
+        "stationid": 374,
+        "name": "Mani Majra Town",
+        "lat": 30.71971,
+        "lng": 76.82995
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 88,
+        "name": "Mata Mansa Devi",
+        "lat": 30.72283,
+        "lng": 76.8582
+      },
+      {
+        "stationid": 334,
+        "name": "Saketri",
+        "lat": 30.74624,
+        "lng": 76.84447
+      }
+    ],
+    "schedule": {
+      "time_range": "07:30-19:30",
+      "frequency": "30 min",
+      "length_km": 24,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "79",
+    "name": "PGI to Chhattbir Zoo",
+    "description": "Via OPD, PEC, 10/16, ISBT-17, Aroma, 21, 20 Mkt, 20/30, 32 Hospital, Tribune Chowk, Hallo Majra, Airport, Zirakpur, Dayalpura",
+    "color": "#37474F",
+    "stops": [
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 49,
+        "name": "Punjab Engineering College (PEC)",
+        "lat": 30.7639,
+        "lng": 76.78535
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 66,
+        "name": "Sector 21 Market",
+        "lat": 30.72658,
+        "lng": 76.77692
+      },
+      {
+        "stationid": 69,
+        "name": "Sector 20 Market",
+        "lat": 30.72124,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 330,
+        "name": "Sector 30/27",
+        "lat": 30.71821,
+        "lng": 76.79367
+      },
+      {
+        "stationid": 249,
+        "name": "Sector 32/30 Hospital",
+        "lat": 30.7113,
+        "lng": 76.78155
+      },
+      {
+        "stationid": 12,
+        "name": "Tribune Chowk",
+        "lat": 30.70354,
+        "lng": 76.7897
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 161,
+        "name": "New Airport",
+        "lat": 30.66836,
+        "lng": 76.78508
+      },
+      {
+        "stationid": 45,
+        "name": "Zirakpur (Down)",
+        "lat": 30.65884,
+        "lng": 76.82052
+      },
+      {
+        "stationid": 385,
+        "name": "Dayalpura",
+        "lat": 30.63941,
+        "lng": 76.78723
+      },
+      {
+        "stationid": 387,
+        "name": "Chhattbir ZOO",
+        "lat": 30.60785,
+        "lng": 76.79447
+      }
+    ],
+    "schedule": {
+      "time_range": "07:00-18:15",
+      "frequency": "45 min",
+      "length_km": 27.9,
+      "num_buses": 4
+    }
+  },
+  {
+    "route_id": "80",
+    "name": "PGI to Zirakpur",
+    "description": "Via New OPD, PEC, 10/16, ISBT-17, Aroma, 20 mkt, 30 mkt, 29 mkt, Elante Mall, Colony No.4, Hallomajra, Mouli Jagran, Raipur Kalan, Baltana",
+    "color": "#455A64",
+    "stops": [
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 49,
+        "name": "Punjab Engineering College (PEC)",
+        "lat": 30.7639,
+        "lng": 76.78535
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 69,
+        "name": "Sector 20 Market",
+        "lat": 30.72124,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 135,
+        "name": "Sector 30 Market",
+        "lat": 30.71524,
+        "lng": 76.78794
+      },
+      {
+        "stationid": 131,
+        "name": "Sector 29 Market (Up)",
+        "lat": 30.7097,
+        "lng": 76.79198
+      },
+      {
+        "stationid": 96,
+        "name": "Elante Mall (Down)",
+        "lat": 30.70589,
+        "lng": 76.79668
+      },
+      {
+        "stationid": 91,
+        "name": "Colony No. 4",
+        "lat": 30.70052,
+        "lng": 76.80334
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 263,
+        "name": "Mauli Jagran",
+        "lat": 30.68816,
+        "lng": 76.82378
+      },
+      {
+        "stationid": 382,
+        "name": "Raipur Kalan (U.T. Border)",
+        "lat": 30.6846,
+        "lng": 76.82701
+      },
+      {
+        "stationid": 383,
+        "name": "Baltana",
+        "lat": 30.66808,
+        "lng": 76.82636
+      },
+      {
+        "stationid": 45,
+        "name": "Zirakpur (Down)",
+        "lat": 30.65884,
+        "lng": 76.82052
+      }
+    ],
+    "schedule": {
+      "time_range": "06:30-20:15",
+      "frequency": "30 min",
+      "length_km": 20,
+      "num_buses": 5
+    }
+  },
+  {
+    "route_id": "85",
+    "name": "ISBT-43 to Zirakpur",
+    "description": "Via 42/43, Attawa, Kissan Bhawan, 23/22, ISBT-17, Aroma, Piccadilly Chowk, 21/34, 20/33, 30/32, 29/31, Tribune Chowk, Hallomajra, Mouli Jagran, Raipur Kalan, Baltana",
+    "color": "#78909C",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 580,
+        "name": "Kishan bhavan",
+        "lat": 30.73294,
+        "lng": 76.76302
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 581,
+        "name": "picardly chowk",
+        "lat": 30.72629,
+        "lng": 76.76831
+      },
+      {
+        "stationid": 253,
+        "name": "Sector 34/21",
+        "lat": 30.72143,
+        "lng": 76.77233
+      },
+      {
+        "stationid": 264,
+        "name": "Sector 20/33",
+        "lat": 30.71934,
+        "lng": 76.77462
+      },
+      {
+        "stationid": 249,
+        "name": "Sector 32/30 Hospital",
+        "lat": 30.7113,
+        "lng": 76.78155
+      },
+      {
+        "stationid": 247,
+        "name": "Sector 29/31 (Tribune)",
+        "lat": 30.70814,
+        "lng": 76.78497
+      },
+      {
+        "stationid": 12,
+        "name": "Tribune Chowk",
+        "lat": 30.70354,
+        "lng": 76.7897
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 263,
+        "name": "Mauli Jagran",
+        "lat": 30.68816,
+        "lng": 76.82378
+      },
+      {
+        "stationid": 382,
+        "name": "Raipur Kalan (U.T. Border)",
+        "lat": 30.6846,
+        "lng": 76.82701
+      },
+      {
+        "stationid": 383,
+        "name": "Baltana",
+        "lat": 30.66808,
+        "lng": 76.82636
+      },
+      {
+        "stationid": 45,
+        "name": "Zirakpur (Down)",
+        "lat": 30.65884,
+        "lng": 76.82052
+      }
+    ],
+    "schedule": {
+      "time_range": "06:15-19:45",
+      "frequency": "30 min",
+      "length_km": 19.5,
+      "num_buses": 5
+    }
+  },
+  {
+    "route_id": "239",
+    "name": "ISBT-43 to Lake",
+    "description": "Via 43/44, 35/34, Aroma, ISBT-17, 17/18, 9/8 K.C., UT Sectt., MLA Flat, H/Court, Bird Park",
+    "color": "#0277BD",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 81,
+        "name": "Sector 17/18",
+        "lat": 30.73432,
+        "lng": 76.78109
+      },
+      {
+        "stationid": 280,
+        "name": "Sector 9/8",
+        "lat": 30.74256,
+        "lng": 76.79419
+      },
+      {
+        "stationid": 176,
+        "name": "UT Secretariat Towards High Court",
+        "lat": 30.74989,
+        "lng": 76.79088
+      },
+      {
+        "stationid": 2,
+        "name": "MLA Flats (Up)",
+        "lat": 30.7547,
+        "lng": 76.79857
+      },
+      {
+        "stationid": 20,
+        "name": "High Court",
+        "lat": 30.7578,
+        "lng": 76.80278
+      },
+      {
+        "stationid": 672,
+        "name": "Bird Park",
+        "lat": 30.74727,
+        "lng": 76.80786
+      },
+      {
+        "stationid": 256,
+        "name": "Sukhna Lake",
+        "lat": 30.74335,
+        "lng": 76.80886
+      }
+    ],
+    "schedule": {
+      "time_range": "07:20-20:15",
+      "frequency": "20 min",
+      "length_km": 14,
+      "num_buses": 5
+    }
+  },
+  {
+    "route_id": "551",
+    "name": "ISBT-43 to PGI",
+    "description": "Via Sector 34/35, Aroma, Sector 22/17, 16 General Hospital, New OPD",
+    "color": "#C62828",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 938,
+        "name": "Sector 34/35",
+        "lat": 30.72221,
+        "lng": 76.76184
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 552,
+        "name": "Sector 22/17",
+        "lat": 30.73597,
+        "lng": 76.7774
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      }
+    ],
+    "schedule": {
+      "time_range": "05:30-20:20",
+      "frequency": "10 min",
+      "length_km": 11,
+      "num_buses": 9
+    }
+  },
+  {
+    "route_id": "2F",
+    "name": "PGI to Platinum Homes",
+    "description": "Via New OPD, 2/11, 10/16, 17/16, ISBT-17, 17/18, 8/18, 7/19, 26/27, 26/28 G.Mkt, TPT area, CTU w/s, Rly/Stn, Rly/Crossing, H.B.Chowk, Panchkula Sector-8/17, 9/16, 10/15, 11/12, Pkl B/S, Sec-4, 21, 20 Pkl, Sushma Square/Dhakoli, Platinum Homes",
+    "color": "#D81B60",
+    "stops": [
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 146,
+        "name": "New OPD (Up)",
+        "lat": 30.76182,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 995,
+        "name": "Sector 2/11A PEC",
+        "lat": 30.76449,
+        "lng": 76.78788
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 60,
+        "name": "Sector 17/16",
+        "lat": 30.74193,
+        "lng": 76.77829
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 81,
+        "name": "Sector 17/18",
+        "lat": 30.73432,
+        "lng": 76.78109
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 89,
+        "name": "Sector 7/19",
+        "lat": 30.73128,
+        "lng": 76.7995
+      },
+      {
+        "stationid": 80,
+        "name": "Sector 26/27",
+        "lat": 30.72719,
+        "lng": 76.80326
+      },
+      {
+        "stationid": 128,
+        "name": "Sector 28/26 Grain Market",
+        "lat": 30.7224,
+        "lng": 76.80765
+      },
+      {
+        "stationid": 458,
+        "name": "Transport Chowk (Down)",
+        "lat": 30.71822,
+        "lng": 76.81189
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 476,
+        "name": "Sector 8/17 Panchkula",
+        "lat": 30.69939,
+        "lng": 76.83959
+      },
+      {
+        "stationid": 202,
+        "name": "Sector 9/16 Panchkula",
+        "lat": 30.69389,
+        "lng": 76.84115
+      },
+      {
+        "stationid": 224,
+        "name": "Sector 10/15 Panchkula",
+        "lat": 30.68781,
+        "lng": 76.84431
+      },
+      {
+        "stationid": 116,
+        "name": "Sector 11/12 Rally Chowk Panchkula",
+        "lat": 30.6805,
+        "lng": 76.85212
+      },
+      {
+        "stationid": 324,
+        "name": "Panchkula Bus Stand",
+        "lat": 30.69215,
+        "lng": 76.85365
+      },
+      {
+        "stationid": 300,
+        "name": "Sector 4 Panchkula",
+        "lat": 30.69077,
+        "lng": 76.86047
+      },
+      {
+        "stationid": 322,
+        "name": "Sector 20 Panchkula",
+        "lat": 30.66839,
+        "lng": 76.85781
+      },
+      {
+        "stationid": 695,
+        "name": "Sushma Square",
+        "lat": 30.64875,
+        "lng": 76.84351
+      },
+      {
+        "stationid": 981,
+        "name": "Platinum Homes/Sanauli",
+        "lat": 30.63673,
+        "lng": 76.8461
+      }
+    ],
+    "schedule": {
+      "time_range": "05:40-18:50",
+      "frequency": "20-25 min",
+      "length_km": 31,
+      "num_buses": 10
+    }
+  },
+  {
+    "route_id": "240",
+    "name": "ISBT-43 to Mata Mansa Devi",
+    "description": "Via 43/44, 35/34, Kissan Bhawan, 23/22, ISBT-17, Aroma, 21, 20, 30, 29 mkts, Elante Mall, Colony No.4, CTU w/s, R/Station, R/Crossing, Kalagram, H/B Chowk, M/Majra",
+    "color": "#6A1B9A",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 580,
+        "name": "Kishan bhavan",
+        "lat": 30.73294,
+        "lng": 76.76302
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 66,
+        "name": "Sector 21 Market",
+        "lat": 30.72658,
+        "lng": 76.77692
+      },
+      {
+        "stationid": 69,
+        "name": "Sector 20 Market",
+        "lat": 30.72124,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 135,
+        "name": "Sector 30 Market",
+        "lat": 30.71524,
+        "lng": 76.78794
+      },
+      {
+        "stationid": 131,
+        "name": "Sector 29 Market (Up)",
+        "lat": 30.7097,
+        "lng": 76.79198
+      },
+      {
+        "stationid": 96,
+        "name": "Elante Mall (Down)",
+        "lat": 30.70589,
+        "lng": 76.79668
+      },
+      {
+        "stationid": 91,
+        "name": "Colony No. 4",
+        "lat": 30.70052,
+        "lng": 76.80334
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 145,
+        "name": "Kalagram Down",
+        "lat": 30.7097,
+        "lng": 76.82869
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 88,
+        "name": "Mata Mansa Devi",
+        "lat": 30.72283,
+        "lng": 76.8582
+      }
+    ],
+    "schedule": {
+      "time_range": "05:15-20:50",
+      "frequency": "30 min",
+      "length_km": 20.4,
+      "num_buses": 5
+    }
+  },
+  {
+    "route_id": "202",
+    "name": "ISBT-43 to Pb. Civil Sectt. (High Court)",
+    "description": "Via 43/44, 42/43, 36/35, 23/22, ISBT-17, 17/18, KC, UT Sectt, MLA Flat, H/Court, Pb/HR Sectt.",
+    "color": "#1565C0",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 81,
+        "name": "Sector 17/18",
+        "lat": 30.73432,
+        "lng": 76.78109
+      },
+      {
+        "stationid": 173,
+        "name": "Sector 17/9 K.C (Down)",
+        "lat": 30.74311,
+        "lng": 76.78887
+      },
+      {
+        "stationid": 176,
+        "name": "UT Secretariat Towards High Court",
+        "lat": 30.74989,
+        "lng": 76.79088
+      },
+      {
+        "stationid": 2,
+        "name": "MLA Flats (Up)",
+        "lat": 30.7547,
+        "lng": 76.79857
+      },
+      {
+        "stationid": 20,
+        "name": "High Court",
+        "lat": 30.7578,
+        "lng": 76.80278
+      },
+      {
+        "stationid": 36,
+        "name": "Punjab Civil Secratariat",
+        "lat": 30.76268,
+        "lng": 76.79969
+      }
+    ],
+    "schedule": {
+      "time_range": "07:15-20:00",
+      "frequency": "15 min",
+      "length_km": 13,
+      "num_buses": 6
+    }
+  },
+  {
+    "route_id": "206",
+    "name": "ISBT-43 to IT Park",
+    "description": "Via Attawa, Kissan Bhawan, 23/22, ISBT-17, 17/18, 8/18, 7/19, 26/27, G/Mkt, TPT, R/Crossing, H/B Chowk, M/Majra, Indira Colony, Kishangarh",
+    "color": "#283593",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 580,
+        "name": "Kishan bhavan",
+        "lat": 30.73294,
+        "lng": 76.76302
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 81,
+        "name": "Sector 17/18",
+        "lat": 30.73432,
+        "lng": 76.78109
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 89,
+        "name": "Sector 7/19",
+        "lat": 30.73128,
+        "lng": 76.7995
+      },
+      {
+        "stationid": 80,
+        "name": "Sector 26/27",
+        "lat": 30.72719,
+        "lng": 76.80326
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 458,
+        "name": "Transport Chowk (Down)",
+        "lat": 30.71822,
+        "lng": 76.81189
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 536,
+        "name": "Indira Colony Up",
+        "lat": 30.7202,
+        "lng": 76.84075
+      },
+      {
+        "stationid": 143,
+        "name": "Kishangarh Down",
+        "lat": 30.73093,
+        "lng": 76.83029
+      },
+      {
+        "stationid": 149,
+        "name": "IT Park (Down)",
+        "lat": 30.73026,
+        "lng": 76.84546
+      }
+    ],
+    "schedule": {
+      "time_range": "06:10-19:20",
+      "frequency": "20 min",
+      "length_km": 18.1,
+      "num_buses": 7
+    }
+  },
+  {
+    "route_id": "8",
+    "name": "Mohali Ph-XI to PGI",
+    "description": "Via Sec-49/48, Jagatpura, 47 Mkt, 46 Mkt, 45 Mkt, 44 Mkt, ISBT-43, 44/43, 35/34, Aroma, 22/17, 16/17, 16/10 Hospital, PEC, OPD",
+    "color": "#558B2F",
+    "stops": [
+      {
+        "stationid": 320,
+        "name": "Sector 65/Phase 11",
+        "lat": 30.67692,
+        "lng": 76.74873
+      },
+      {
+        "stationid": 337,
+        "name": "Sector 48/49 (U.T. Border) (Down)",
+        "lat": 30.68778,
+        "lng": 76.74991
+      },
+      {
+        "stationid": 349,
+        "name": "Jagatpura/ 48 Motor Market",
+        "lat": 30.68547,
+        "lng": 76.76079
+      },
+      {
+        "stationid": 153,
+        "name": "Sector 47 Market - Up",
+        "lat": 30.69573,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 204,
+        "name": "Sector 46 Market (Down)",
+        "lat": 30.70228,
+        "lng": 76.76466
+      },
+      {
+        "stationid": 203,
+        "name": "Sector 45 Market",
+        "lat": 30.70595,
+        "lng": 76.75744
+      },
+      {
+        "stationid": 201,
+        "name": "Sector 44 Market towards 45",
+        "lat": 30.71319,
+        "lng": 76.75247
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 84,
+        "name": "Sector 44/43",
+        "lat": 30.71579,
+        "lng": 76.75161
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 552,
+        "name": "Sector 22/17",
+        "lat": 30.73597,
+        "lng": 76.7774
+      },
+      {
+        "stationid": 59,
+        "name": "Sector 16/17",
+        "lat": 30.74208,
+        "lng": 76.77813
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 49,
+        "name": "Punjab Engineering College (PEC)",
+        "lat": 30.7639,
+        "lng": 76.78535
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      }
+    ],
+    "schedule": {
+      "time_range": "06:05-20:50",
+      "frequency": "75 min",
+      "length_km": 21,
+      "num_buses": 2
+    }
+  },
+  {
+    "route_id": "2B",
+    "name": "PGI to Mansa Devi",
+    "description": "Via N/OPD, 10/16, 18/17, 8/18, 7/19, 26/27, G/Mkt, CTU W/S, R/Station, H/B Chowk, M/Majra",
+    "color": "#2E7D32",
+    "stops": [
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 555,
+        "name": "Sector 18/17",
+        "lat": 30.73734,
+        "lng": 76.78611
+      },
+      {
+        "stationid": 86,
+        "name": "Sector 8/18",
+        "lat": 30.73792,
+        "lng": 76.79331
+      },
+      {
+        "stationid": 89,
+        "name": "Sector 7/19",
+        "lat": 30.73128,
+        "lng": 76.7995
+      },
+      {
+        "stationid": 80,
+        "name": "Sector 26/27",
+        "lat": 30.72719,
+        "lng": 76.80326
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 88,
+        "name": "Mata Mansa Devi",
+        "lat": 30.72283,
+        "lng": 76.8582
+      }
+    ],
+    "schedule": {
+      "time_range": "06:00-20:00",
+      "frequency": "30 min",
+      "length_km": 20,
+      "num_buses": 4
+    }
+  },
+  {
+    "route_id": "7C",
+    "name": "ISBT-17 to ISBT-17",
+    "description": "Via Aroma, 21, 20, 30, 29 mkts, Tribune, Ind.Area Ph-II, Ram Darbar, 31, 32, 33, 34, 35 mkts, ISBT-43, 43/44, 42, 41/42, 36/37, 37, 38 mkts, 39/38west, Maloya, 38west, 25/38, 24, 23 mkts, 23/22",
+    "color": "#1B5E20",
+    "stops": [
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 66,
+        "name": "Sector 21 Market",
+        "lat": 30.72658,
+        "lng": 76.77692
+      },
+      {
+        "stationid": 69,
+        "name": "Sector 20 Market",
+        "lat": 30.72124,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 135,
+        "name": "Sector 30 Market",
+        "lat": 30.71524,
+        "lng": 76.78794
+      },
+      {
+        "stationid": 131,
+        "name": "Sector 29 Market (Up)",
+        "lat": 30.7097,
+        "lng": 76.79198
+      },
+      {
+        "stationid": 12,
+        "name": "Tribune Chowk",
+        "lat": 30.70354,
+        "lng": 76.7897
+      },
+      {
+        "stationid": 571,
+        "name": "Industrial Area Phase 2",
+        "lat": 30.69591,
+        "lng": 76.78643
+      },
+      {
+        "stationid": 94,
+        "name": "Ram Darbar",
+        "lat": 30.69344,
+        "lng": 76.78826
+      },
+      {
+        "stationid": 16,
+        "name": "Sector 31 Market",
+        "lat": 30.70537,
+        "lng": 76.78011
+      },
+      {
+        "stationid": 365,
+        "name": "Sector 32 Market",
+        "lat": 30.71051,
+        "lng": 76.7735
+      },
+      {
+        "stationid": 363,
+        "name": "Sector 33 Market",
+        "lat": 30.71425,
+        "lng": 76.76931
+      },
+      {
+        "stationid": 362,
+        "name": "Sector 34 Market",
+        "lat": 30.72028,
+        "lng": 76.76514
+      },
+      {
+        "stationid": 573,
+        "name": "Sector 35/34 Light Point",
+        "lat": 30.72269,
+        "lng": 76.76284
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 83,
+        "name": "Sector 43/44",
+        "lat": 30.71647,
+        "lng": 76.7524
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 31,
+        "name": "Sector 41/42",
+        "lat": 30.73019,
+        "lng": 76.74052
+      },
+      {
+        "stationid": 286,
+        "name": "Sector 36/37",
+        "lat": 30.73495,
+        "lng": 76.75191
+      },
+      {
+        "stationid": 33,
+        "name": "Sector 37 Market (Down)",
+        "lat": 30.73797,
+        "lng": 76.74946
+      },
+      {
+        "stationid": 360,
+        "name": "Sector 38 Market",
+        "lat": 30.74398,
+        "lng": 76.74525
+      },
+      {
+        "stationid": 194,
+        "name": "Sector 39/38 west",
+        "lat": 30.74746,
+        "lng": 76.73553
+      },
+      {
+        "stationid": 171,
+        "name": "Maloya",
+        "lat": 30.7522,
+        "lng": 76.7176
+      },
+      {
+        "stationid": 174,
+        "name": "Sector 38 West",
+        "lat": 30.75279,
+        "lng": 76.73758
+      },
+      {
+        "stationid": 290,
+        "name": "Sector 38/25 Light Point",
+        "lat": 30.75071,
+        "lng": 76.74856
+      },
+      {
+        "stationid": 370,
+        "name": "Sector 24 Market",
+        "lat": 30.74595,
+        "lng": 76.76135
+      },
+      {
+        "stationid": 369,
+        "name": "Sector 23 Market",
+        "lat": 30.73799,
+        "lng": 76.76666
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      }
+    ],
+    "schedule": {
+      "time_range": "05:40-19:30",
+      "frequency": "10 min",
+      "length_km": 38,
+      "num_buses": 12
+    }
+  },
+  {
+    "route_id": "35A",
+    "name": "ISBT-17 to Sector-123",
+    "description": "Via 16/17, 16/10, 11/15, PEC, New OPD, PGI, 14/15, 24/25, 37/38, 40/41, P.B.Barrier, Balongi, Daun, KFC, Jalvayu Tower, Sec-124/125",
+    "color": "#00838F",
+    "stops": [
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 59,
+        "name": "Sector 16/17",
+        "lat": 30.74208,
+        "lng": 76.77813
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 119,
+        "name": "Sector 15/11",
+        "lat": 30.75437,
+        "lng": 76.77931
+      },
+      {
+        "stationid": 49,
+        "name": "Punjab Engineering College (PEC)",
+        "lat": 30.7639,
+        "lng": 76.78535
+      },
+      {
+        "stationid": 146,
+        "name": "New OPD (Up)",
+        "lat": 30.76182,
+        "lng": 76.78159
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 189,
+        "name": "Sector 14/15",
+        "lat": 30.75477,
+        "lng": 76.76917
+      },
+      {
+        "stationid": 190,
+        "name": "Sector 24/25",
+        "lat": 30.74837,
+        "lng": 76.75907
+      },
+      {
+        "stationid": 38,
+        "name": "Sector 37/38",
+        "lat": 30.74207,
+        "lng": 76.74892
+      },
+      {
+        "stationid": 209,
+        "name": "Sector 40/41",
+        "lat": 30.73529,
+        "lng": 76.73782
+      },
+      {
+        "stationid": 141,
+        "name": "Balongi",
+        "lat": 30.73351,
+        "lng": 76.6954
+      },
+      {
+        "stationid": 162,
+        "name": "Daun (Down)",
+        "lat": 30.73797,
+        "lng": 76.68208
+      },
+      {
+        "stationid": 663,
+        "name": "KFC",
+        "lat": 30.74044,
+        "lng": 76.6747
+      },
+      {
+        "stationid": 665,
+        "name": "Jal Vayu Tower",
+        "lat": 30.75362,
+        "lng": 76.6741
+      },
+      {
+        "stationid": 664,
+        "name": "Sector 125 (Mohali)",
+        "lat": 30.75667,
+        "lng": 76.66944
+      }
+    ],
+    "schedule": {
+      "time_range": "06:00-20:40",
+      "frequency": "40 min",
+      "length_km": 23,
+      "num_buses": 4
+    }
+  },
+  {
+    "route_id": "38AS",
+    "name": "ISBT-17 to New Airport",
+    "description": "Via ISBT-43, Sohana, Sec-82, Mohali Airport Chowk",
+    "color": "#BF360C",
+    "stops": [
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 97,
+        "name": "Sohana",
+        "lat": 30.69122,
+        "lng": 76.70987
+      },
+      {
+        "stationid": 694,
+        "name": "Sector 82",
+        "lat": 30.65544,
+        "lng": 76.73961
+      },
+      {
+        "stationid": 161,
+        "name": "New Airport",
+        "lat": 30.66836,
+        "lng": 76.78508
+      }
+    ],
+    "schedule": {
+      "time_range": "01:50-23:30",
+      "frequency": "20-40 min",
+      "length_km": 22,
+      "num_buses": 8
+    }
+  },
+  {
+    "route_id": "76",
+    "name": "ISBT-17 to Kurali",
+    "description": "Via Mullanpur, Block",
+    "color": "#4E342E",
+    "stops": [
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 70,
+        "name": "Khuda Lahora (Down)",
+        "lat": 30.77572,
+        "lng": 76.7698
+      },
+      {
+        "stationid": 72,
+        "name": "Sarangpur Barrier (Down)",
+        "lat": 30.78638,
+        "lng": 76.75563
+      },
+      {
+        "stationid": 154,
+        "name": "Mullanpur",
+        "lat": 30.80163,
+        "lng": 76.74338
+      },
+      {
+        "stationid": 160,
+        "name": "Block",
+        "lat": 30.83393,
+        "lng": 76.67339
+      },
+      {
+        "stationid": 561,
+        "name": "Kurali",
+        "lat": 30.83061,
+        "lng": 76.58182
+      }
+    ],
+    "schedule": {
+      "time_range": "05:15-20:15",
+      "frequency": "30-40 min",
+      "length_km": 31,
+      "num_buses": 4
+    }
+  },
+  {
+    "route_id": "123A",
+    "name": "PGI to Mohali R/Station Phase-11",
+    "description": "Via OPD, PEC, 11/10, 10/16, ISBT-17, Aroma, 34/35, 44/43, ISBT-43, 51 mkt, UT Border, 62/63, 63 mkt, 64 mkt, 65 mkt",
+    "color": "#EF6C00",
+    "stops": [
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 49,
+        "name": "Punjab Engineering College (PEC)",
+        "lat": 30.7639,
+        "lng": 76.78535
+      },
+      {
+        "stationid": 611,
+        "name": "Sector 11/10",
+        "lat": 30.758,
+        "lng": 76.78859
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 938,
+        "name": "Sector 34/35",
+        "lat": 30.72221,
+        "lng": 76.76184
+      },
+      {
+        "stationid": 84,
+        "name": "Sector 44/43",
+        "lat": 30.71579,
+        "lng": 76.75161
+      },
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 260,
+        "name": "Sector 51 Market",
+        "lat": 30.70594,
+        "lng": 76.7433
+      },
+      {
+        "stationid": 99,
+        "name": "YPS/Sector 61/52",
+        "lat": 30.709,
+        "lng": 76.73128
+      },
+      {
+        "stationid": 346,
+        "name": "Sector 62/63(U.T. Border)",
+        "lat": 30.69859,
+        "lng": 76.73811
+      },
+      {
+        "stationid": 351,
+        "name": "Sector 63/64",
+        "lat": 30.69056,
+        "lng": 76.73989
+      },
+      {
+        "stationid": 353,
+        "name": "Sector 64 Market/Phase 10",
+        "lat": 30.68785,
+        "lng": 76.73837
+      },
+      {
+        "stationid": 320,
+        "name": "Sector 65/Phase 11",
+        "lat": 30.67692,
+        "lng": 76.74873
+      },
+      {
+        "stationid": 355,
+        "name": "Railway Station (Mohali)",
+        "lat": 30.66655,
+        "lng": 76.73947
+      }
+    ],
+    "schedule": {
+      "time_range": "06:25-19:40",
+      "frequency": "30 min",
+      "length_km": 19.8,
+      "num_buses": 5
+    }
+  },
+  {
+    "route_id": "241",
+    "name": "ISBT-43 to Mansa Devi",
+    "description": "Via 52/53, 52/61, YPS, 51 mkt, 51/50, 50 mkt, 49/50, 50/45, 44C Gaushala, 45 mkt, 45/46, 32/33, 20/30, 19/27, 27 mkt, G/Mkt-26, CTU w/s, Ind.Area Ph-1, R/Station, R/Crossing, H/B Chowk, M/Majra",
+    "color": "#8E24AA",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 229,
+        "name": "Sector 42/53",
+        "lat": 30.72394,
+        "lng": 76.73673
+      },
+      {
+        "stationid": 99,
+        "name": "YPS/Sector 61/52",
+        "lat": 30.709,
+        "lng": 76.73128
+      },
+      {
+        "stationid": 260,
+        "name": "Sector 51 Market",
+        "lat": 30.70594,
+        "lng": 76.7433
+      },
+      {
+        "stationid": 237,
+        "name": "Sector 51/50",
+        "lat": 30.70356,
+        "lng": 76.74621
+      },
+      {
+        "stationid": 402,
+        "name": "Sector 50 Market (Down)",
+        "lat": 30.70046,
+        "lng": 76.7485
+      },
+      {
+        "stationid": 359,
+        "name": "Sector 50B/49A",
+        "lat": 30.69846,
+        "lng": 76.75234
+      },
+      {
+        "stationid": 1023,
+        "name": "Sector 50/45",
+        "lat": 30.70366,
+        "lng": 76.75335
+      },
+      {
+        "stationid": 942,
+        "name": "Sector 44C Gaushala",
+        "lat": 30.70718,
+        "lng": 76.75209
+      },
+      {
+        "stationid": 203,
+        "name": "Sector 45 Market",
+        "lat": 30.70595,
+        "lng": 76.75744
+      },
+      {
+        "stationid": 285,
+        "name": "Sector 45/46",
+        "lat": 30.70502,
+        "lng": 76.7628
+      },
+      {
+        "stationid": 291,
+        "name": "Sector 32/33",
+        "lat": 30.7107,
+        "lng": 76.77224
+      },
+      {
+        "stationid": 330,
+        "name": "Sector 30/27",
+        "lat": 30.71821,
+        "lng": 76.79367
+      },
+      {
+        "stationid": 199,
+        "name": "Sector 19/27",
+        "lat": 30.72508,
+        "lng": 76.79494
+      },
+      {
+        "stationid": 126,
+        "name": "Sector 27 Market (Down)",
+        "lat": 30.72279,
+        "lng": 76.79879
+      },
+      {
+        "stationid": 250,
+        "name": "Sector 26/28 Grain Market",
+        "lat": 30.72252,
+        "lng": 76.8079
+      },
+      {
+        "stationid": 39,
+        "name": "CTU Workshop",
+        "lat": 30.71101,
+        "lng": 76.81358
+      },
+      {
+        "stationid": 956,
+        "name": "Industrial Area Phase-1",
+        "lat": 30.71393,
+        "lng": 76.8087
+      },
+      {
+        "stationid": 51,
+        "name": "Railway Station (Chandigarh)",
+        "lat": 30.70261,
+        "lng": 76.81909
+      },
+      {
+        "stationid": 416,
+        "name": "Railway Crossing towards Railway Station",
+        "lat": 30.71185,
+        "lng": 76.82229
+      },
+      {
+        "stationid": 620,
+        "name": "Housing Board Chowk",
+        "lat": 30.70811,
+        "lng": 76.83675
+      },
+      {
+        "stationid": 414,
+        "name": "Mani Majra",
+        "lat": 30.71343,
+        "lng": 76.84331
+      },
+      {
+        "stationid": 88,
+        "name": "Mata Mansa Devi",
+        "lat": 30.72283,
+        "lng": 76.8582
+      }
+    ],
+    "schedule": {
+      "time_range": "05:20-21:10",
+      "frequency": "20-25 min",
+      "length_km": 24.5,
+      "num_buses": 7
+    }
+  },
+  {
+    "route_id": "212",
+    "name": "PGI to Derabassi",
+    "description": "Via New OPD, PEC, 10/16, ISBT-17, Aroma, Piccadilly Chowk, 21/34, 20/33, 30/32, 29/31, Hallomajra, Airport, Zirakpur, Bhankarpur",
+    "color": "#D84315",
+    "stops": [
+      {
+        "stationid": 148,
+        "name": "PGI",
+        "lat": 30.76222,
+        "lng": 76.77324
+      },
+      {
+        "stationid": 534,
+        "name": "New OPD (Down)",
+        "lat": 30.76213,
+        "lng": 76.78179
+      },
+      {
+        "stationid": 49,
+        "name": "Punjab Engineering College (PEC)",
+        "lat": 30.7639,
+        "lng": 76.78535
+      },
+      {
+        "stationid": 54,
+        "name": "Sector 10/16 General Hospital",
+        "lat": 30.75156,
+        "lng": 76.78185
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 581,
+        "name": "picardly chowk",
+        "lat": 30.72629,
+        "lng": 76.76831
+      },
+      {
+        "stationid": 253,
+        "name": "Sector 34/21",
+        "lat": 30.72143,
+        "lng": 76.77233
+      },
+      {
+        "stationid": 264,
+        "name": "Sector 20/33",
+        "lat": 30.71934,
+        "lng": 76.77462
+      },
+      {
+        "stationid": 249,
+        "name": "Sector 32/30 Hospital",
+        "lat": 30.7113,
+        "lng": 76.78155
+      },
+      {
+        "stationid": 247,
+        "name": "Sector 29/31 (Tribune)",
+        "lat": 30.70814,
+        "lng": 76.78497
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 161,
+        "name": "New Airport",
+        "lat": 30.66836,
+        "lng": 76.78508
+      },
+      {
+        "stationid": 45,
+        "name": "Zirakpur (Down)",
+        "lat": 30.65884,
+        "lng": 76.82052
+      },
+      {
+        "stationid": 140,
+        "name": "Bhankarpur (Up)",
+        "lat": 30.6066,
+        "lng": 76.83722
+      },
+      {
+        "stationid": 23,
+        "name": "Dera Bassi",
+        "lat": 30.58495,
+        "lng": 76.84404
+      }
+    ],
+    "schedule": {
+      "time_range": "06:10-19:50",
+      "frequency": "20 min",
+      "length_km": 26.5,
+      "num_buses": 8
+    }
+  },
+  {
+    "route_id": "216",
+    "name": "ISBT-43 to Derabassi",
+    "description": "Via 42/43, Attawa, 36/35, Kissan Bhawan, 23/22, ISBT-17, Aroma, 21/34, 20/33, 30/32, Tribune Chowk, Hallo Majra, Airport Chowk, Zirakpur, Bhankarpur",
+    "color": "#E64A19",
+    "stops": [
+      {
+        "stationid": 22,
+        "name": "ISBT 43",
+        "lat": 30.71709,
+        "lng": 76.74341
+      },
+      {
+        "stationid": 65,
+        "name": "Sector 42/43",
+        "lat": 30.72284,
+        "lng": 76.74663
+      },
+      {
+        "stationid": 206,
+        "name": "Attawa/Sector 36/42",
+        "lat": 30.73072,
+        "lng": 76.74798
+      },
+      {
+        "stationid": 62,
+        "name": "Sector 36/35 Flower Market",
+        "lat": 30.72979,
+        "lng": 76.75773
+      },
+      {
+        "stationid": 580,
+        "name": "Kishan bhavan",
+        "lat": 30.73294,
+        "lng": 76.76302
+      },
+      {
+        "stationid": 61,
+        "name": "Sector 23/22",
+        "lat": 30.73563,
+        "lng": 76.76723
+      },
+      {
+        "stationid": 21,
+        "name": "ISBT 17",
+        "lat": 30.73637,
+        "lng": 76.77837
+      },
+      {
+        "stationid": 48,
+        "name": "Aroma",
+        "lat": 30.7306,
+        "lng": 76.77496
+      },
+      {
+        "stationid": 253,
+        "name": "Sector 34/21",
+        "lat": 30.72143,
+        "lng": 76.77233
+      },
+      {
+        "stationid": 264,
+        "name": "Sector 20/33",
+        "lat": 30.71934,
+        "lng": 76.77462
+      },
+      {
+        "stationid": 249,
+        "name": "Sector 32/30 Hospital",
+        "lat": 30.7113,
+        "lng": 76.78155
+      },
+      {
+        "stationid": 12,
+        "name": "Tribune Chowk",
+        "lat": 30.70354,
+        "lng": 76.7897
+      },
+      {
+        "stationid": 9,
+        "name": "Hallo Majra (Down)",
+        "lat": 30.69408,
+        "lng": 76.80027
+      },
+      {
+        "stationid": 161,
+        "name": "New Airport",
+        "lat": 30.66836,
+        "lng": 76.78508
+      },
+      {
+        "stationid": 45,
+        "name": "Zirakpur (Down)",
+        "lat": 30.65884,
+        "lng": 76.82052
+      },
+      {
+        "stationid": 140,
+        "name": "Bhankarpur (Up)",
+        "lat": 30.6066,
+        "lng": 76.83722
+      },
+      {
+        "stationid": 23,
+        "name": "Dera Bassi",
+        "lat": 30.58495,
+        "lng": 76.84404
+      }
+    ],
+    "schedule": {
+      "time_range": "05:10-21:10",
+      "frequency": "20 min",
+      "length_km": 26,
+      "num_buses": 8
+    }
+  }
+]
