@@ -1,4 +1,4 @@
-/* ===== Apple Design System – CTU Bus Routes ===== */
+/* ===== Lamborghini Design System – CTU Bus Routes ===== */
 
 /* Reset */
 *, *::before, *::after {
@@ -7,37 +7,29 @@
     box-sizing: border-box;
 }
 
-/* Typography: SF Pro stack with Inter fallback */
+/* Typography & Colors */
 :root {
-    --primary: #0066cc;
-    --primary-focus: #0071e3;
-    --primary-on-dark: #2997ff;
-    --ink: #1d1d1f;
-    --ink-muted-80: #333333;
-    --ink-muted-48: #7a7a7a;
-    --canvas: #ffffff;
-    --canvas-parchment: #f5f5f7;
-    --surface-pearl: #fafafc;
-    --hairline: #e0e0e0;
-    --divider-soft: #f0f0f0;
-    --on-primary: #ffffff;
+    --gold: #FFC000;
+    --gold-dark: #917300;
+    --black: #000000;
+    --charcoal: #202020;
+    --iron: #181818;
+    --white: #FFFFFF;
+    --ash: #7D7D7D;
+    --cyan: #29ABE2;
 
-    --font-display: "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-    --font-text: "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-
-    --rounded-sm: 8px;
-    --rounded-lg: 18px;
-    --rounded-pill: 9999px;
+    --font-display: "LamboType", "Roboto", "Helvetica Neue", sans-serif;
+    --font-text: "LamboType", "Roboto", "Helvetica Neue", sans-serif;
 }
 
 body {
     font-family: var(--font-text);
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.47;
-    letter-spacing: -0.374px;
-    color: var(--ink);
-    background: var(--canvas);
+    line-height: 1.5;
+    color: var(--white);
+    background: var(--black);
+    text-transform: uppercase;
 }
 
 /* ===== Layout ===== */
@@ -53,10 +45,10 @@ body {
     min-width: 380px;
     height: 100vh;
     overflow-y: auto;
-    background: var(--canvas-parchment);
+    background: var(--black);
     display: flex;
     flex-direction: column;
-    border-right: 1px solid var(--hairline);
+    border-right: 1px solid var(--charcoal);
     z-index: 10;
 }
 
@@ -64,6 +56,19 @@ body {
     flex: 1;
     height: 100vh;
     z-index: 1;
+    background: var(--iron);
+}
+
+/* Override Leaflet controls to fit dark theme */
+.leaflet-bar a {
+    background-color: var(--charcoal) !important;
+    color: var(--white) !important;
+    border: 1px solid var(--black) !important;
+    border-radius: 0 !important;
+}
+.leaflet-bar a:hover {
+    background-color: var(--gold) !important;
+    color: var(--black) !important;
 }
 
 /* ===== Right Panel ===== */
@@ -73,9 +78,8 @@ body {
     top: 0;
     height: 100vh;
     width: 360px;
-    background: var(--canvas-parchment);
-    border-left: 1px solid var(--hairline);
-    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.05);
+    background: var(--iron);
+    border-left: 1px solid var(--charcoal);
     z-index: 1000;
     display: flex;
     transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
@@ -91,31 +95,30 @@ body {
     top: 20px;
     width: 32px;
     height: 48px;
-    background: var(--canvas);
-    border: 1px solid var(--hairline);
+    background: var(--charcoal);
+    border: 1px solid var(--ash);
     border-right: none;
-    border-radius: 8px 0 0 8px;
+    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.05);
     font-size: 20px;
-    color: var(--ink-muted-48);
-    transition: color 0.2s ease;
+    color: var(--white);
+    transition: all 0.2s ease;
 }
 
 #panel-toggle:hover {
-    color: var(--primary);
+    background: var(--gold);
+    color: var(--black);
+    border-color: var(--gold);
 }
 
 #right-panel.collapsed #panel-toggle {
     transform: scaleX(-1);
     left: -32px;
-    border-radius: 0 8px 8px 0;
-    border: 1px solid var(--hairline);
     border-left: none;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    border-right: 1px solid var(--ash);
 }
 
 #panel-content {
@@ -126,89 +129,105 @@ body {
     flex-direction: column;
 }
 
+/* ===== Sidebar Header ===== */
 #sidebar-header {
-    padding: 24px 24px 20px;
-    background: var(--canvas);
-    border-bottom: 1px solid var(--hairline);
+    padding: 32px 24px 24px;
+    background: var(--black);
+    border-bottom: 1px solid var(--charcoal);
 }
 
 #sidebar-header h1 {
     font-family: var(--font-display);
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 1.14;
-    letter-spacing: 0.196px;
-    color: var(--ink);
-    margin-bottom: 4px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 0.95;
+    color: var(--white);
+    margin-bottom: 8px;
 }
 
 #sidebar-header p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.43;
-    letter-spacing: -0.224px;
-    color: var(--ink-muted-48);
+    color: var(--ash);
+    letter-spacing: 0.5px;
 }
 
 /* ===== Trip Planner ===== */
 #trip-planner {
-    padding: 16px 24px;
-    background: var(--canvas);
-    border-bottom: 1px solid var(--hairline);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--black);
 }
 
 .planner-field {
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     position: relative;
 }
 
 .planner-field label {
-    display: block;
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: -0.12px;
-    color: var(--ink-muted-48);
-    margin-bottom: 4px;
-    text-transform: uppercase;
+    color: var(--ash);
+    letter-spacing: 1px;
 }
 
 .planner-field input {
-    width: 100%;
-    padding: 10px 16px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: var(--rounded-pill);
+    padding: 16px;
+    border: 1px solid var(--charcoal);
+    background: var(--iron);
+    color: var(--white);
     font-family: var(--font-text);
-    font-size: 15px;
-    color: var(--ink);
-    background: var(--canvas-parchment);
+    font-size: 14px;
+    border-radius: 0;
     outline: none;
-    height: 40px;
+    text-transform: uppercase;
+    transition: border-color 0.2s;
 }
 
 .planner-field input:focus {
-    border-color: var(--primary-focus);
-    outline: 2px solid var(--primary-focus);
-    outline-offset: -1px;
-    background: var(--canvas);
+    border-color: var(--gold);
 }
 
 .planner-field input::placeholder {
-    color: var(--ink-muted-48);
+    color: var(--ash);
 }
 
-/* Autocomplete suggestions */
+#plan-btn {
+    margin-top: 8px;
+    padding: 24px;
+    background: var(--gold);
+    color: var(--black);
+    border: none;
+    border-radius: 0;
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.2s;
+}
+
+#plan-btn:hover {
+    background: var(--gold-dark);
+}
+
+/* ===== Autocomplete Suggestions ===== */
 .suggestions {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--canvas);
-    border: 1px solid var(--hairline);
-    border-radius: var(--rounded-sm);
-    box-shadow: rgba(0, 0, 0, 0.22) 3px 5px 30px 0;
+    background: var(--charcoal);
+    border: 1px solid var(--ash);
+    border-top: none;
+    z-index: 100;
     max-height: 200px;
     overflow-y: auto;
-    z-index: 1000;
 }
 
 .suggestions.hidden {
@@ -216,61 +235,57 @@ body {
 }
 
 .suggestion-item {
-    padding: 10px 16px;
+    padding: 12px 16px;
     font-size: 14px;
-    color: var(--ink);
+    color: var(--white);
     cursor: pointer;
-    border-bottom: 1px solid var(--divider-soft);
-}
-
-.suggestion-item:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid var(--iron);
 }
 
 .suggestion-item:hover {
-    background: var(--canvas-parchment);
+    background: var(--iron);
+    color: var(--gold);
 }
 
-#plan-btn {
-    width: 100%;
-    padding: 11px 22px;
-    background: var(--primary);
-    color: var(--on-primary);
-    border: none;
-    border-radius: var(--rounded-pill);
-    font-family: var(--font-text);
-    font-size: 17px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: transform 0.1s ease;
-}
-
-#plan-btn:active {
-    transform: scale(0.95);
-}
-
-/* Plan results */
+/* ===== Plan Results ===== */
 #plan-results {
-    padding: 0;
-    max-height: 280px;
+    flex: 1;
     overflow-y: auto;
+    padding: 24px;
+    background: var(--iron);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-#plan-results.hidden {
-    display: none;
+.loading, .no-results {
+    text-align: center;
+    color: var(--ash);
+    padding: 40px 20px;
+    font-size: 14px;
 }
 
 .plan-card {
-    padding: 14px 24px;
-    border-bottom: 1px solid var(--hairline);
-    background: var(--canvas);
+    background: var(--charcoal);
+    padding: 20px;
+    border: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.plan-card:hover {
+    border-color: var(--gold);
 }
 
 .plan-route-header {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 6px;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.route-color {
+    width: 4px;
+    height: 24px;
 }
 
 .plan-route-info {
@@ -280,179 +295,136 @@ body {
     align-items: center;
 }
 
+.route-id {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--white);
+}
+
 .plan-travel-time {
     font-size: 14px;
-    font-weight: 600;
-    color: var(--primary);
+    color: var(--ash);
 }
 
 .plan-stops {
-    font-size: 13px;
-    color: var(--ink-muted-48);
-    margin-bottom: 8px;
-}
-
-.plan-buses {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
+    font-size: 12px;
+    color: var(--ash);
+    margin-bottom: 16px;
+    letter-spacing: 1px;
 }
 
 .plan-bus {
-    padding: 6px 12px;
-    border-radius: var(--rounded-pill);
-    background: var(--canvas-parchment);
-    font-size: 12px;
-    color: var(--ink-muted-80);
     display: flex;
-    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: var(--iron);
+    border-left: 2px solid var(--cyan);
 }
 
 .plan-bus-next {
-    background: var(--primary);
-    color: var(--on-primary);
+    border-left-color: var(--gold);
 }
 
-.plan-bus-time,
+.plan-bus-time {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+}
+
 .plan-bus-wait {
-    white-space: nowrap;
+    font-size: 14px;
+    color: var(--gold);
+    font-weight: 600;
 }
 
-.plan-bus-wait {
-    opacity: 0.8;
-}
-
-#divider-line {
-    height: 1px;
-    background: var(--hairline);
-}
-
-/* ===== Search ===== */
+/* ===== Search Box ===== */
 #search-box {
-    padding: 12px 24px;
-    border-bottom: 1px solid var(--hairline);
+    padding: 24px;
+    background: var(--black);
     display: flex;
-    gap: 8px;
-    background: var(--canvas);
+    gap: 12px;
 }
 
 #search-input {
     flex: 1;
-    padding: 12px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: var(--rounded-pill);
-    font-family: var(--font-text);
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 1.47;
-    letter-spacing: -0.374px;
-    color: var(--ink);
-    background: var(--canvas);
+    padding: 16px;
+    background: var(--iron);
+    border: 1px solid var(--charcoal);
+    color: var(--white);
+    font-size: 14px;
+    text-transform: uppercase;
     outline: none;
-    height: 44px;
 }
 
 #search-input:focus {
-    border-color: var(--primary-focus);
-    outline: 2px solid var(--primary-focus);
-    outline-offset: -1px;
-}
-
-#search-input::placeholder {
-    color: var(--ink-muted-48);
+    border-color: var(--gold);
 }
 
 #clear-btn {
-    width: 44px;
-    height: 44px;
-    border: none;
-    border-radius: var(--rounded-pill);
-    background: var(--surface-pearl);
-    color: var(--ink-muted-80);
-    font-size: 16px;
+    width: 48px;
+    background: transparent;
+    border: 1px solid var(--ash);
+    color: var(--white);
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    transition: transform 0.1s ease;
+    font-size: 16px;
 }
 
-#clear-btn:active {
-    transform: scale(0.95);
+#clear-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
 }
 
 /* ===== Route List ===== */
 #route-list {
     flex: 1;
     overflow-y: auto;
-    padding: 8px 0;
+    background: var(--iron);
 }
 
 .route-item {
-    padding: 16px 24px;
-    cursor: pointer;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--charcoal);
     display: flex;
     align-items: center;
-    gap: 14px;
-    transition: background 0.15s ease;
+    gap: 16px;
+    cursor: pointer;
+    background: var(--iron);
+    transition: background 0.2s;
 }
 
 .route-item:hover {
-    background: var(--canvas);
+    background: var(--charcoal);
 }
 
-.route-item:active {
-    transform: scale(0.98);
-}
-
-.route-color {
+.route-item-color {
     width: 4px;
-    height: 40px;
-    border-radius: 2px;
-    flex-shrink: 0;
+    height: 32px;
 }
 
-.route-info {
+.route-item-content {
     flex: 1;
-    min-width: 0;
 }
 
-.route-id {
-    font-family: var(--font-display);
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.24;
-    letter-spacing: -0.374px;
-    color: var(--ink);
+.route-item-id {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 4px;
+    line-height: 1;
 }
 
-.route-name {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.43;
-    letter-spacing: -0.224px;
-    color: var(--ink-muted-48);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-top: 2px;
-}
-
-.route-meta {
+.route-item-name {
     font-size: 12px;
-    font-weight: 400;
-    line-height: 1.0;
-    letter-spacing: -0.12px;
-    color: var(--ink-muted-48);
-    margin-top: 4px;
+    color: var(--ash);
+    letter-spacing: 0.5px;
 }
 
 /* ===== Route Detail Panel ===== */
 #route-detail {
     flex: 1;
     overflow-y: auto;
-    padding: 0;
+    background: var(--black);
 }
 
 #route-detail.hidden {
@@ -462,183 +434,124 @@ body {
 #back-btn {
     display: block;
     width: 100%;
-    padding: 14px 24px;
+    padding: 20px 24px;
+    background: var(--charcoal);
     border: none;
-    border-bottom: 1px solid var(--hairline);
-    background: var(--canvas);
+    border-bottom: 1px solid var(--iron);
+    color: var(--white);
     text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     cursor: pointer;
-    font-family: var(--font-text);
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--primary);
-    letter-spacing: -0.374px;
-    transition: transform 0.1s ease;
 }
 
-#back-btn:active {
-    transform: scale(0.95);
-}
-
-#detail-content {
-    padding: 24px;
+#back-btn:hover {
+    color: var(--gold);
 }
 
 .detail-header {
-    margin-bottom: 24px;
+    padding: 40px 24px;
+    background: var(--iron);
 }
 
 .detail-route-id {
-    font-family: var(--font-display);
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 1.14;
-    letter-spacing: 0.196px;
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 16px;
 }
 
 .detail-route-name {
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--ink-muted-80);
-    margin-top: 4px;
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 16px;
 }
 
 .detail-desc {
     font-size: 14px;
-    font-weight: 400;
-    line-height: 1.43;
-    letter-spacing: -0.224px;
-    color: var(--ink-muted-48);
-    margin-top: 8px;
+    color: var(--ash);
+    line-height: 1.6;
 }
 
-/* ===== Schedule Table ===== */
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 17px 0;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--charcoal);
     font-size: 14px;
-    letter-spacing: -0.224px;
+    text-align: left;
 }
 
 .schedule-table th {
-    text-align: left;
-    padding: 10px 12px;
-    background: var(--canvas-parchment);
-    font-weight: 600;
-    color: var(--ink-muted-80);
-    border-bottom: 1px solid var(--hairline);
+    color: var(--ash);
+    font-weight: 400;
+    width: 40%;
 }
 
 .schedule-table td {
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--divider-soft);
-    color: var(--ink);
+    color: var(--white);
 }
 
-/* ===== Stops List ===== */
 .stops-heading {
-    font-family: var(--font-display);
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: -0.374px;
-    color: var(--ink);
-    margin: 24px 0 12px;
+    padding: 32px 24px 16px;
+    font-size: 24px;
+    color: var(--white);
+    background: var(--black);
 }
 
 .stop-list {
     list-style: none;
+    padding: 0 24px 40px;
+    background: var(--black);
 }
 
 .stop-list li {
-    padding: 8px 0 8px 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--charcoal);
     font-size: 14px;
-    font-weight: 400;
-    letter-spacing: -0.224px;
-    color: var(--ink-muted-80);
-    position: relative;
-    border-left: 2px solid var(--hairline);
-    margin-left: 6px;
-}
-
-.stop-list li::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--primary);
-    position: absolute;
-    left: -5px;
-    top: 11px;
-}
-
-.stop-list li:first-child,
-.stop-list li:last-child {
-    font-weight: 600;
-    color: var(--ink);
-}
-
-.stop-list li:first-child::before,
-.stop-list li:last-child::before {
-    width: 10px;
-    height: 10px;
-    left: -6px;
-    top: 10px;
+    color: var(--ash);
+    display: flex;
+    justify-content: space-between;
 }
 
 .stop-list li.highlight-stop {
-    font-weight: 700;
-    color: #FF9500;
-    background-color: rgba(255, 149, 0, 0.08);
-    border-radius: 4px;
-    border-left-color: #FF9500;
-}
-
-.stop-list li.highlight-stop::before {
-    background: #FF9500;
-    box-shadow: 0 0 0 3px rgba(255, 149, 0, 0.2);
+    color: var(--gold);
+    font-weight: 600;
+    border-bottom-color: var(--gold);
 }
 
 .stop-time {
-    float: right;
+    color: var(--white);
     font-size: 12px;
-    font-weight: 600;
-    color: var(--primary);
-    letter-spacing: -0.12px;
 }
 
-/* ===== No Results / Loading ===== */
-.no-results,
-.loading {
-    padding: 48px 24px;
-    text-align: center;
-    color: var(--ink-muted-48);
-    font-size: 17px;
+.stop-list li.highlight-stop .stop-time {
+    color: var(--gold);
 }
 
-/* ===== Map ===== */
-#map {
-    flex: 1;
-    height: 100vh;
-}
-
-/* Leaflet popup override to match Apple style */
+/* ===== Map Popups (Leaflet Overrides) ===== */
 .leaflet-popup-content-wrapper {
-    border-radius: var(--rounded-lg) !important;
-    box-shadow: rgba(0, 0, 0, 0.22) 3px 5px 30px 0 !important;
-    font-family: var(--font-text) !important;
+    background: var(--black) !important;
+    color: var(--white) !important;
+    border: 1px solid var(--charcoal) !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
 }
 
 .leaflet-popup-content {
-    margin: 14px 18px !important;
+    margin: 16px 20px !important;
+    font-family: var(--font-text) !important;
     font-size: 14px !important;
-    line-height: 1.43 !important;
-    letter-spacing: -0.224px !important;
-    color: var(--ink) !important;
+    text-transform: uppercase !important;
 }
 
 .leaflet-popup-tip {
-    box-shadow: none !important;
+    background: var(--black) !important;
+    border-bottom: 1px solid var(--charcoal) !important;
+    border-right: 1px solid var(--charcoal) !important;
 }
 
 /* ===== Responsive ===== */
@@ -652,7 +565,7 @@ body {
         height: auto;
         max-height: 40vh;
         border-right: none;
-        border-bottom: 1px solid var(--hairline);
+        border-bottom: 1px solid var(--charcoal);
     }
     #map {
         height: 60vh;
@@ -665,9 +578,7 @@ body {
         left: 0;
         right: 0;
         border-left: none;
-        border-top: 1px solid var(--hairline);
-        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-        z-index: 1000;
+        border-top: 1px solid var(--charcoal);
         max-height: 60vh;
     }
     #right-panel.collapsed {
@@ -679,10 +590,8 @@ body {
         transform: translateX(-50%);
         width: 48px;
         height: 32px;
-        border-radius: 8px 8px 0 0;
-        border: 1px solid var(--hairline);
+        border-right: 1px solid var(--ash);
         border-bottom: none;
-        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
     }
     #panel-toggle::after {
         content: '▼';
@@ -692,13 +601,10 @@ body {
     
     #right-panel.collapsed #panel-toggle {
         transform: translateX(-50%);
-        border-radius: 8px 8px 0 0;
-        border: 1px solid var(--hairline);
-        border-bottom: none;
-        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+        border-right: 1px solid var(--ash);
     }
     #right-panel.collapsed #panel-toggle::after {
         content: '▲';
-        color: var(--ink-muted-48);
+        color: var(--white);
     }
 }

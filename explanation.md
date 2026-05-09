@@ -109,14 +109,3 @@ flowchart LR
 - **`showRouteOnMap()`**: Iterates through the route's stops to drop circular markers (`L.circleMarker`). Route lines are intentionally hidden to keep the map minimalist and uncluttered. It highlights the specific origin and destination stops in bright orange if they were searched via the Trip Planner.
 - **`setupAutocomplete()`**: Attaches input listeners to provide real-time stop filtering and dropdowns to eliminate user typos when searching for current locations and destinations.
 
----
-
-## 4. Styling (`frontend/style.css`)
-
-The CSS implements a modern, premium **Apple Design System** aesthetic.
-
-- **Variables (`:root`)**: Centralizes the color palette (`--primary` blue, `--canvas-parchment`, `--surface-pearl`) and typography to ensure consistency.
-- **Typography:** Relies heavily on the SF Pro font stack (with an Inter fallback) to mimic native macOS and iOS applications.
-- **Layout:** Uses a dual-pane Flexbox/Fixed layout. The left sidebar houses the Trip Planner, while the right panel is a collapsible sliding drawer (using CSS `transform` transitions) for browsing raw routes.
-- **Visual Design:** Favors pill-shaped buttons, heavily rounded corners (`border-radius: 18px`), and subtle drop shadows over harsh borders to create a soft, floating glass-like interface. 
-- **Responsive Layout:** On mobile devices (under 834px width), the Flexbox layout automatically reorganizes. The left sidebar locks to the top 40% of the screen, and the right panel slides up from the bottom rather than the side to remain thumb-friendly.
