@@ -555,114 +555,56 @@ body {
 }
 
 /* ===== Responsive ===== */
-/* ===== Responsive Optimizations ===== */
 @media (max-width: 834px) {
     #app {
         flex-direction: column;
     }
-
     #sidebar {
         width: 100%;
         min-width: unset;
         height: auto;
-        max-height: 45vh;
+        max-height: 40vh;
         border-right: none;
         border-bottom: 1px solid var(--charcoal);
-        -webkit-overflow-scrolling: touch; /* Momentum scrolling */
     }
-
     #map {
-        flex: 1;
-        height: auto;
+        height: 60vh;
     }
-
-    /* Top Sidebar Adjustments */
-    #sidebar-header {
-        padding: 20px 16px;
-    }
-    #sidebar-header h1 {
-        font-size: 28px;
-    }
-    #trip-planner {
-        padding: 16px;
-        gap: 12px;
-    }
-    #plan-btn {
-        padding: 16px;
-    }
-
-    /* Right Panel (Bottom Sheet) */
     #right-panel {
         width: 100%;
-        height: 70vh;
+        height: auto;
         top: auto;
         bottom: 0;
         left: 0;
         right: 0;
         border-left: none;
         border-top: 1px solid var(--charcoal);
-        max-height: 70vh;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        box-shadow: 0 -10px 40px rgba(0,0,0,0.5);
+        max-height: 60vh;
     }
-
     #right-panel.collapsed {
         transform: translateY(100%);
     }
-
     #panel-toggle {
-        top: -40px;
+        top: -48px;
         left: 50%;
         transform: translateX(-50%);
-        width: 60px;
-        height: 40px;
-        background: var(--charcoal);
-        border: 1px solid var(--charcoal);
+        width: 48px;
+        height: 32px;
+        border-right: 1px solid var(--ash);
         border-bottom: none;
-        border-radius: 12px 12px 0 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--white);
     }
-
     #panel-toggle::after {
-        content: '';
-        width: 30px;
-        height: 4px;
-        background: var(--ash);
-        border-radius: 2px;
+        content: '▼';
+        font-size: 12px;
     }
-
+    #panel-toggle { color: transparent; }
+    
     #right-panel.collapsed #panel-toggle {
-        top: -40px;
         transform: translateX(-50%);
+        border-right: 1px solid var(--ash);
     }
-
-    #panel-content {
-        padding-top: 10px;
-    }
-
-    /* Detail View Adjustments */
-    .detail-route-id {
-        font-size: 28px;
-    }
-    .detail-header {
-        padding: 24px 16px;
-    }
-    .schedule-table th, .schedule-table td {
-        padding: 12px 16px;
-    }
-    .stop-list {
-        padding: 0 16px 40px;
-    }
-
-    /* Increase Touch Targets */
-    .route-item {
-        padding: 24px 16px;
-    }
-    .planner-field input {
-        padding: 18px 16px;
+    #right-panel.collapsed #panel-toggle::after {
+        content: '▲';
+        color: var(--white);
     }
 }
