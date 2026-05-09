@@ -7,8 +7,8 @@ This document provides an in-depth, architectural overview and function-by-funct
 ```mermaid
 graph TD
     subgraph Frontend ["Frontend (Vanilla JS + HTML/CSS)"]
-        UI[User Interface]
-        Maps[Google Maps API]
+        UI[Apple-Inspired Interface]
+        Maps[Leaflet.js Map]
         Logic["app.js Core Logic"]
     end
 
@@ -18,88 +18,105 @@ graph TD
     end
 
     subgraph Data ["Local Data Storage"]
-        ST["stations.json / data.json"]
-        RT["routes.json"]
+        ST["data.json (Stops)"]
+        RT["routes.json (Schedules)"]
     end
 
     UI <--> |User Interaction| Logic
     Logic <--> |API Requests| API
-    Logic --> |Renders Routes & Markers| Maps
+    Logic --> |Renders Stops & Highlights| Maps
     API <--> |Calculates Times| Math
     Math <--> |Reads JSON| Data
 ```
 
+---
+
 ## 1. Data Layer
 
-The application operates without a database, relying on static JSON files loaded into memory for extreme speed and simple deployment.
+The application operates without a traditional database, relying instead on static JSON files loaded into memory for extreme speed, low latency, and simple deployment.
 
 - **`data.json`**: Contains raw coordinate data (latitude, longitude) and metadata for 888 bus stations across the city.
 - **`routes.json`**: Contains the logical definition of the 52 routes. Each route defines its sequential stops, its timetable (e.g., `06:10-18:40`), frequency, total buses assigned, and a visual hex color for map rendering.
 
+---
+
 ## 2. Backend (`backend/app.py`)
 
-The backend is built on Flask and acts as the data processing engine.
+The backend is built on Flask and acts as the data processing and routing engine.
 
 ### Core Mathematical Algorithm (`estimate_arrival_times`)
 
-The backend dynamically computes when a bus will arrive at a given stop without needing a hardcoded per-trip schedule.
+The backend dynamically computes when a bus will arrive at a given stop based on the aggregate route frequency, without needing a hardcoded per-trip schedule.
 
 ```mermaid
 sequenceDiagram
     participant User
-    participant RouteEngine
-    participant MathLogic
+    participant API as Flask API
+    participant Math as Timing Engine
 
-    User->>RouteEngine: Clicks Route (e.g. 5A)
-    RouteEngine->>MathLogic: estimate_arrival_times(Route 5A, CurrentTime)
-    Note over MathLogic: 1. Calculate Cycle Time (Freq * Buses)
-    Note over MathLogic: 2. Determine Route Shape (Circular vs Linear)
-    Note over MathLogic: 3. Calculate Stop Interval (Total Time / Stops)
-    Note over MathLogic: 4. Find next bus departing after CurrentTime
-    MathLogic-->>RouteEngine: Route Data + Arrival Times
-    RouteEngine-->>User: JSON Response
+    User->>API: Selects Route (e.g., Route 1)
+    API->>Math: estimate_arrival_times(Route 1, CurrentTime)
+    Note over Math: 1. Calculate Cycle Time = (Freq × Buses)
+    Note over Math: 2. Shape Factor = Circular (90%) or Linear (45%)
+    Note over Math: 3. Stop Interval = Total Time ÷ Stops
+    Note over Math: 4. Find next bus departing after CurrentTime
+    Math-->>API: Array of Stops with specific 'HH:MM' times
+    API-->>User: JSON Response
 ```
 
 - **Cycle Time:** It multiplies the route's `frequency` by `num_buses` to figure out the total cycle time.
-- **One-Way Factor:** Checks if a route is circular (starts and ends at the exact same stop). If circular, traversing takes 90% of the cycle time. If linear, it takes 45%.
+- **One-Way Factor:** Checks if a route is circular (starts and ends at the exact same stop). If circular, traversing all stops takes 90% of the cycle time. If linear, it takes 45%.
 - **Stop Intervals:** Divides that total travel time evenly across the number of stops to find the driving time between adjacent stops.
-- **Next Bus Calculation:** Iterates through the daily schedule for that stop and mathematically finds the first bus arriving *after* the user's current time.
+- **Next Bus Calculation:** Iterates through the daily schedule for that route and mathematically finds the first bus arriving *after* the user's current time.
 
 ### API Endpoints
-- **`/api/routes`**: Returns a lightweight summary list of all routes to populate the sidebar.
+- **`/api/routes`**: Returns a lightweight summary list of all routes to populate the search panel.
 - **`/api/routes/<route_id>`**: Fetches full route data, running it through the timing engine to inject real-time estimates before returning it.
-- **`/api/suggest`**: Autocomplete engine using custom fuzzy matching logic (`fuzzy_match()`) to return the closest 15 stops based on user input.
-- **`/api/plan`**: Trip Planner engine. It scans all routes to find ones containing the `from` stop and `to` stop in the correct travel order. It calculates total travel time and returns the top 5 fastest routes based on wait time.
+- **`/api/suggest`**: Autocomplete engine using strict substring matching to return the closest stop name suggestions as the user types.
+- **`/api/plan`**: Trip Planner engine. It scans all routes to find ones containing the user's `from` stop and `to` stop in the correct travel order. It calculates total travel time and returns the top 5 fastest upcoming bus routes.
+
+---
 
 ## 3. Frontend (`frontend/app.js`)
 
-The Vanilla JS frontend connects the user interface to the Flask backend and handles the complex Google Maps rendering engine.
+The Vanilla JS frontend connects the user interface to the Flask backend and handles the Leaflet rendering engine.
 
-### Map Rendering Pipeline
+### Application Flow & Map Rendering
 
 ```mermaid
 flowchart LR
-    A[User Selects Route] --> B[Fetch Route Data from API]
-    B --> C[Clear Previous Map Layers]
-    C --> D[Draw Stop Markers]
-    D --> E[Batch Waypoints into groups of 23]
-    E --> F[Call Google Maps Directions API]
-    F --> G[Draw Road-Snapped Polylines]
-    G --> H[Extract & Combine Path Points]
-    H --> I[Animate Directional Arrow]
+    A[User Opens App] --> B[Leaflet Map Initializes]
+    B --> C{User Action}
+    
+    C -->|Trip Planner| D[Enter From/To]
+    D --> E[Autocomplete Dropdowns]
+    E --> F[API /plan Request]
+    F --> G[Render Plan Cards]
+    G --> H[Click Card to View Route]
+    
+    C -->|Browse Routes| I[Open Right Panel]
+    I --> J[Filter/Search Routes]
+    J --> K[Click Specific Route]
+    
+    K --> L[API /routes Request]
+    H --> L
+    L --> M[Clear Old Map Markers]
+    M --> N[Draw CircleMarkers at Stops]
+    N --> O[Highlight Specific Search Stops]
 ```
 
-- **`showRouteOnMap()`**: Iterates through the route's stops to drop circular markers. To draw the polyline, it uses the **Google Maps Directions Service**. Because the API limits waypoints to 25 per request, the code splits the route into batches of 23 waypoints, makes sequential requests, and stitches the polylines together seamlessly. `stopover: false` is used on waypoints to ensure the routing snaps to roads and passes through the stop area without making awkward U-turns to hit exact GPS coordinates.
-- **`startArrowAnimation()`**: After the Directions API returns the exact road path, this function extracts all coordinates and combines them. It **downsamples** the path (keeping points ~30m apart to remove micro-jitter) and animates a directional arrow. It uses `google.maps.geometry.spherical` to calculate the heading, allowing the arrow to rotate smoothly and face the direction of travel as it navigates corners.
+- **`initMap()`**: Initializes the open-source Leaflet map using OpenStreetMap tiles. We migrated away from Google Maps to prioritize a cleaner, stop-centric interface without restrictive API keys.
+- **`showRouteOnMap()`**: Iterates through the route's stops to drop circular markers (`L.circleMarker`). Route lines are intentionally hidden to keep the map minimalist and uncluttered. It highlights the specific origin and destination stops in bright orange if they were searched via the Trip Planner.
+- **`setupAutocomplete()`**: Attaches input listeners to provide real-time stop filtering and dropdowns to eliminate user typos when searching for current locations and destinations.
 
-### UI & UX Logic
-- **`renderRouteList()`**: Dynamically generates the left sidebar HTML list from the API response.
-- **`showRouteDetail()`**: Replaces the main list with a detailed view of the selected route, dynamically building the schedule table and stop sequence list.
-- **`search()`**: Attached to the input listener to provide real-time route and stop filtering as the user types.
+---
 
 ## 4. Styling (`frontend/style.css`)
 
-The CSS uses a clean, utilitarian flat design heavily dependent on Flexbox, mimicking a practical government/transit utility.
+The CSS implements a modern, premium **Apple Design System** aesthetic.
 
-- **Responsive Layout:** On desktop, it is a dual-pane setup (`100vw`, `100vh`) with a fixed 360px sidebar and the map filling the rest of the window. On mobile (`max-width: 700px`), it overrides Flexbox to switch to a stacked vertical layout where the sidebar becomes a scrollable panel above or below the map.
-- **Visual Design:** Colors are flat hex codes (e.g., `#C62828` for CTU Red), actively avoiding gradients, heavy shadows, or glassmorphism to satisfy the strict design constraint of avoiding an "AI-generated" or overly flashy appearance.
+- **Variables (`:root`)**: Centralizes the color palette (`--primary` blue, `--canvas-parchment`, `--surface-pearl`) and typography to ensure consistency.
+- **Typography:** Relies heavily on the SF Pro font stack (with an Inter fallback) to mimic native macOS and iOS applications.
+- **Layout:** Uses a dual-pane Flexbox/Fixed layout. The left sidebar houses the Trip Planner, while the right panel is a collapsible sliding drawer (using CSS `transform` transitions) for browsing raw routes.
+- **Visual Design:** Favors pill-shaped buttons, heavily rounded corners (`border-radius: 18px`), and subtle drop shadows over harsh borders to create a soft, floating glass-like interface. 
+- **Responsive Layout:** On mobile devices (under 834px width), the Flexbox layout automatically reorganizes. The left sidebar locks to the top 40% of the screen, and the right panel slides up from the bottom rather than the side to remain thumb-friendly.
