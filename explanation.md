@@ -6,20 +6,20 @@ This document provides an in-depth, architectural overview and function-by-funct
 
 ```mermaid
 graph TD
-    subgraph Frontend [Frontend (Vanilla JS + HTML/CSS)]
+    subgraph Frontend ["Frontend (Vanilla JS + HTML/CSS)"]
         UI[User Interface]
         Maps[Google Maps API]
-        Logic[app.js Core Logic]
+        Logic["app.js Core Logic"]
     end
 
-    subgraph Backend [Backend (Python Flask)]
+    subgraph Backend ["Backend (Python Flask)"]
         API[REST API endpoints]
-        Math[Timing & Routing Engine]
+        Math["Timing & Routing Engine"]
     end
 
-    subgraph Data [Local Data Storage]
-        ST[stations.json / data.json]
-        RT[routes.json]
+    subgraph Data ["Local Data Storage"]
+        ST["stations.json / data.json"]
+        RT["routes.json"]
     end
 
     UI <--> |User Interaction| Logic
