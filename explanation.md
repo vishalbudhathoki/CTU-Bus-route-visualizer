@@ -7,7 +7,7 @@ This document provides an in-depth, architectural overview and function-by-funct
 ```mermaid
 graph TD
     subgraph Frontend ["Frontend (Vanilla JS + HTML/CSS)"]
-        UI[Apple-Inspired Interface]
+        UI[Modern Dark Interface]
         Maps[Leaflet.js Map]
         Logic["app.js Core Logic"]
     end
