@@ -82,6 +82,40 @@ def get_routes():
 
 import re, copy
 
+def get_stop_offsets(stops, length_km, freq_min, num_buses):
+    """Calculate cumulative time offsets (in minutes) for each stop on the route, factoring in local speed limits."""
+    num_stops = len(stops)
+    offsets = [0.0] * num_stops
+    if num_stops <= 1:
+        return offsets
+
+    if length_km and length_km > 0:
+        avg_dist_km = length_km / (num_stops - 1)
+        
+        for i in range(num_stops - 1):
+            # Flat average speed of 40 km/h for all segments
+            eff_speed = 40.0
+
+            seg_min = (avg_dist_km / eff_speed) * 60
+            seg_min += 0.5  # Boarding/alighting penalty
+
+            if seg_min < 1.0:
+                seg_min = 1.0
+
+            offsets[i+1] = offsets[i] + seg_min
+    else:
+        # Fallback: use cycle time estimation
+        cycle_time = freq_min * num_buses
+        is_circular = len(stops) > 1 and stops[0]['name'].lower() == stops[-1]['name'].lower()
+        total_trip_min = (cycle_time * 0.9) if is_circular else (cycle_time * 0.45)
+        interval = total_trip_min / (num_stops - 1)
+        if interval < 2:
+            interval = 2
+        for i in range(1, num_stops):
+            offsets[i] = offsets[i-1] + interval
+
+    return offsets
+
 def estimate_arrival_times(route, now_minutes):
     """Add estimated next arrival time to each stop based on the schedule and current time.
     
@@ -113,25 +147,12 @@ def estimate_arrival_times(route, now_minutes):
     freq_match = re.search(r'(\d+)', frequency_str)
     freq_min = int(freq_match.group(1)) if freq_match else 20
 
-    # Use route distance to estimate realistic one-way trip time
     length_km = sched.get('length_km', 0)
-    if length_km and length_km > 0:
-        # City bus average ~18 km/h
-        total_trip_min = (length_km / 18.0) * 60
-    else:
-        # Fallback: use cycle time estimation
-        cycle_time = freq_min * num_buses
-        is_circular = len(stops) > 1 and stops[0]['name'].lower() == stops[-1]['name'].lower()
-        total_trip_min = (cycle_time * 0.9) if is_circular else (cycle_time * 0.45)
-
     num_stops = len(stops)
     if num_stops <= 1:
         return route
 
-    interval = total_trip_min / (num_stops - 1)
-    # Ensure at least 2 minutes between stops
-    if interval < 2:
-        interval = 2
+    offsets = get_stop_offsets(stops, length_km, freq_min, num_buses)
 
     # Find the next bus departure from stop 0 after now
     next_dep = -1
@@ -151,7 +172,7 @@ def estimate_arrival_times(route, now_minutes):
 
     # Track this single bus through all stops
     for i in range(num_stops):
-        arr = next_dep + int(round(i * interval))
+        arr = next_dep + int(round(offsets[i]))
         h = (arr // 60) % 24
         m = arr % 60
         stops[i]['arrival'] = '{:02d}:{:02d}'.format(h, m)
@@ -319,25 +340,16 @@ def plan_trip():
         freq_match_obj = re.search(r'(\d+)', frequency_str)
         freq_min = int(freq_match_obj.group(1)) if freq_match_obj else 20
 
-        # Use route distance to estimate realistic one-way trip time
         length_km = sched.get('length_km', 0)
-        if length_km and length_km > 0:
-            total_trip_min = (length_km / 18.0) * 60
-        else:
-            cycle_time = freq_min * num_buses
-            is_circular = len(stops) > 1 and stops[0]['name'].lower() == stops[-1]['name'].lower()
-            total_trip_min = (cycle_time * 0.9) if is_circular else (cycle_time * 0.45)
-        
         num_stops = len(stops)
         if num_stops <= 1:
             continue
-        interval = total_trip_min / (num_stops - 1)
-        if interval < 2:
-            interval = 2
+            
+        offsets = get_stop_offsets(stops, length_km, freq_min, num_buses)
 
         # Time offset for the from-stop from the route start
-        from_offset = int(round(from_idx * interval))
-        to_offset = int(round(to_idx * interval))
+        from_offset = int(round(offsets[from_idx]))
+        to_offset = int(round(offsets[to_idx]))
         travel_time = to_offset - from_offset
 
         # Find next 3 buses arriving at the from-stop
