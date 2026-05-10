@@ -46,7 +46,7 @@ The backend is built on Flask and acts as the data processing and routing engine
 
 ### Core Mathematical Algorithm (`estimate_arrival_times`)
 
-The backend dynamically computes when a bus will arrive at a given stop based on the aggregate route frequency, without needing a hardcoded per-trip schedule.
+The backend dynamically computes when a bus will arrive at a given stop by tracking a **single physical bus** through all its stops, ensuring times always increase sequentially.
 
 ```mermaid
 sequenceDiagram
@@ -54,20 +54,20 @@ sequenceDiagram
     participant API as Flask API
     participant Math as Timing Engine
 
-    User->>API: Selects Route (e.g., Route 1)
-    API->>Math: estimate_arrival_times(Route 1, CurrentTime)
-    Note over Math: 1. Calculate Cycle Time = (Freq × Buses)
-    Note over Math: 2. Shape Factor = Circular (90%) or Linear (45%)
-    Note over Math: 3. Stop Interval = Total Time ÷ Stops
-    Note over Math: 4. Find next bus departing after CurrentTime
-    Math-->>API: Array of Stops with specific 'HH:MM' times
+    User->>API: Selects Route (e.g., Route 4C)
+    API->>Math: estimate_arrival_times(Route 4C, CurrentTime)
+    Note over Math: 1. Calculate trip time from route distance (km ÷ 18 km/h)
+    Note over Math: 2. Divide trip time by number of stops → interval per stop
+    Note over Math: 3. Enforce minimum 2 min between stops
+    Note over Math: 4. Find next bus departing stop 0 after CurrentTime
+    Note over Math: 5. Track that single bus: arrival[i] = departure + (i × interval)
+    Math-->>API: Array of Stops with sequential 'HH:MM' times
     API-->>User: JSON Response
 ```
 
-- **Cycle Time:** It multiplies the route's `frequency` by `num_buses` to figure out the total cycle time.
-- **One-Way Factor:** Checks if a route is circular (starts and ends at the exact same stop). If circular, traversing all stops takes 90% of the cycle time. If linear, it takes 45%.
-- **Stop Intervals:** Divides that total travel time evenly across the number of stops to find the driving time between adjacent stops.
-- **Next Bus Calculation:** Iterates through the daily schedule for that route and mathematically finds the first bus arriving *after* the user's current time.
+- **Trip Time from Distance:** Uses the route's `length_km` from `routes.json` and calculates total one-way trip time at a realistic city bus speed of **18 km/h**. Falls back to `frequency × num_buses` estimation if distance is unavailable.
+- **Stop Intervals:** Divides total trip time evenly across all stops. Enforces a **minimum of 2 minutes** between stops to prevent unrealistic sub-minute intervals on routes with many stops.
+- **Single Bus Tracking:** Finds ONE next bus departure from stop 0, then calculates every subsequent stop's arrival by adding cumulative elapsed time. This guarantees times are **always monotonically increasing** (e.g., 18:00 → 18:04 → 18:08 → 18:12), preventing the previous bug where different stops could match to different physical buses.
 
 ### API Endpoints
 - **`/api/routes`**: Returns a lightweight summary list of all routes to populate the search panel.
