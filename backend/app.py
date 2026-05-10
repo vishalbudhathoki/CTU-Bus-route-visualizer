@@ -181,6 +181,14 @@ def search():
     if not q:
         return jsonify([])
 
+    # Strip 'route' or 'route no' prefix if the user types it so that searching 'route 4C' matches '4C' perfectly
+    if q.startswith('route'):
+        q = q.replace('route no', '').replace('route', '').strip()
+
+    # If the query is empty after stripping, return early
+    if not q:
+        return jsonify([])
+
     scored = []
     for r in ROUTES:
         best_score = 0.0
