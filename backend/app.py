@@ -83,7 +83,12 @@ def get_routes():
 import re, copy
 
 def estimate_arrival_times(route, now_minutes):
-    """Add estimated next arrival time to each stop based on the schedule and current time."""
+    """Add estimated next arrival time to each stop based on the schedule and current time.
+    
+    The algorithm finds the next bus departing from stop 0 after 'now',
+    then tracks that SINGLE bus through all subsequent stops so times
+    are always monotonically increasing.
+    """
     route = copy.deepcopy(route)
     sched = route.get('schedule', {})
     time_range = sched.get('time_range', '')
@@ -108,35 +113,48 @@ def estimate_arrival_times(route, now_minutes):
     freq_match = re.search(r'(\d+)', frequency_str)
     freq_min = int(freq_match.group(1)) if freq_match else 20
 
-    cycle_time = freq_min * num_buses
-    is_circular = len(stops) > 1 and stops[0]['name'].lower() == stops[-1]['name'].lower()
-    total_trip_min = (cycle_time * 0.9) if is_circular else (cycle_time * 0.45)
-    
+    # Use route distance to estimate realistic one-way trip time
+    length_km = sched.get('length_km', 0)
+    if length_km and length_km > 0:
+        # City bus average ~18 km/h
+        total_trip_min = (length_km / 18.0) * 60
+    else:
+        # Fallback: use cycle time estimation
+        cycle_time = freq_min * num_buses
+        is_circular = len(stops) > 1 and stops[0]['name'].lower() == stops[-1]['name'].lower()
+        total_trip_min = (cycle_time * 0.9) if is_circular else (cycle_time * 0.45)
+
     num_stops = len(stops)
     if num_stops <= 1:
         return route
 
     interval = total_trip_min / (num_stops - 1)
+    # Ensure at least 2 minutes between stops
+    if interval < 2:
+        interval = 2
 
-    for i in range(num_stops):
-        elapsed = int(round(i * interval))
-        
-        # Find next bus departing that will arrive here after now_minutes
-        next_arr = -1
-        dep = first_dep
-        while dep <= last_dep:
-            arr = dep + elapsed
-            if arr >= now_minutes:
-                next_arr = arr
-                break
-            dep += freq_min
-            
-        if next_arr != -1:
-            h = (next_arr // 60) % 24
-            m = next_arr % 60
-            stops[i]['arrival'] = '{:02d}:{:02d}'.format(h, m)
-        else:
+    # Find the next bus departure from stop 0 after now
+    next_dep = -1
+    dep = first_dep
+    while dep <= last_dep:
+        if dep >= now_minutes:
+            next_dep = dep
+            break
+        dep += freq_min
+
+    if next_dep == -1:
+        # No more buses today
+        for i in range(num_stops):
             stops[i]['arrival'] = 'Finished'
+        route['stops'] = stops
+        return route
+
+    # Track this single bus through all stops
+    for i in range(num_stops):
+        arr = next_dep + int(round(i * interval))
+        h = (arr // 60) % 24
+        m = arr % 60
+        stops[i]['arrival'] = '{:02d}:{:02d}'.format(h, m)
 
     route['stops'] = stops
     return route
@@ -293,14 +311,21 @@ def plan_trip():
         freq_match_obj = re.search(r'(\d+)', frequency_str)
         freq_min = int(freq_match_obj.group(1)) if freq_match_obj else 20
 
-        cycle_time = freq_min * num_buses
-        is_circular = len(stops) > 1 and stops[0]['name'].lower() == stops[-1]['name'].lower()
-        total_trip_min = (cycle_time * 0.9) if is_circular else (cycle_time * 0.45)
+        # Use route distance to estimate realistic one-way trip time
+        length_km = sched.get('length_km', 0)
+        if length_km and length_km > 0:
+            total_trip_min = (length_km / 18.0) * 60
+        else:
+            cycle_time = freq_min * num_buses
+            is_circular = len(stops) > 1 and stops[0]['name'].lower() == stops[-1]['name'].lower()
+            total_trip_min = (cycle_time * 0.9) if is_circular else (cycle_time * 0.45)
         
         num_stops = len(stops)
         if num_stops <= 1:
             continue
         interval = total_trip_min / (num_stops - 1)
+        if interval < 2:
+            interval = 2
 
         # Time offset for the from-stop from the route start
         from_offset = int(round(from_idx * interval))
