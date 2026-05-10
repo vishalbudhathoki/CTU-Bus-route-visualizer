@@ -384,11 +384,11 @@ body {
 }
 
 .route-item {
-    padding: 20px 24px;
+    padding: 14px 20px;
     border-bottom: 1px solid var(--charcoal);
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     cursor: pointer;
     background: var(--iron);
     transition: background 0.2s;
@@ -400,7 +400,7 @@ body {
 
 .route-item-color {
     width: 4px;
-    height: 32px;
+    height: 24px;
 }
 
 .route-item-content {
@@ -408,14 +408,14 @@ body {
 }
 
 .route-item-id {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--white);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     line-height: 1;
 }
 
 .route-item-name {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--ash);
     letter-spacing: 0.5px;
 }
@@ -434,13 +434,13 @@ body {
 #back-btn {
     display: block;
     width: 100%;
-    padding: 20px 24px;
+    padding: 14px 20px;
     background: var(--charcoal);
     border: none;
     border-bottom: 1px solid var(--iron);
     color: var(--white);
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
@@ -451,26 +451,26 @@ body {
 }
 
 .detail-header {
-    padding: 40px 24px;
+    padding: 28px 20px;
     background: var(--iron);
 }
 
 .detail-route-id {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .detail-route-name {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--white);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .detail-desc {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--ash);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .schedule-table {
@@ -479,9 +479,9 @@ body {
 }
 
 .schedule-table th, .schedule-table td {
-    padding: 16px 24px;
+    padding: 12px 20px;
     border-bottom: 1px solid var(--charcoal);
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
 }
 
@@ -496,22 +496,22 @@ body {
 }
 
 .stops-heading {
-    padding: 32px 24px 16px;
-    font-size: 24px;
+    padding: 24px 20px 12px;
+    font-size: 18px;
     color: var(--white);
     background: var(--black);
 }
 
 .stop-list {
     list-style: none;
-    padding: 0 24px 40px;
+    padding: 0 20px 32px;
     background: var(--black);
 }
 
 .stop-list li {
-    padding: 16px 0;
+    padding: 10px 0;
     border-bottom: 1px solid var(--charcoal);
-    font-size: 14px;
+    font-size: 12px;
     color: var(--ash);
     display: flex;
     justify-content: space-between;
@@ -525,7 +525,7 @@ body {
 
 .stop-time {
     color: var(--white);
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .stop-list li.highlight-stop .stop-time {
