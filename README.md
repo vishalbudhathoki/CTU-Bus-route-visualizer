@@ -72,6 +72,6 @@ More details in [explanation.md](explanation.md).
 
 ---
 
-Built by [Vishal Budhathoki](https://github.com/vishalbudhathoki), [Aryan Sharma](https://github.com/aryansharma0730-cloud),[Raghav Tayal](https://github.com/raghavtayal0903)
+Built by [Vishal Budhathoki](https://github.com/vishalbudhathoki)
 
 Data from CTU official timetables.
