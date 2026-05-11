@@ -64,16 +64,6 @@ explanation.md        — detailed writeup of how everything works
 
 ---
 
-## Hosting
-
-You can deploy this on [Render](https://render.com) for free:
-- Build command: `pip install -r backend/requirements.txt`
-- Start command: `gunicorn backend.app:app`
-
-Note: free tier sleeps after inactivity, so first load might take ~30 seconds.
-
----
-
 ## How the timing works (short version)
 
 The app takes a route's total distance (km), assumes city bus speed of ~18 km/h, and divides the travel time evenly across the stops. Then it finds the next bus departure from the first stop and tracks that single bus through every stop — so the times always go up as you'd expect.
@@ -82,6 +72,6 @@ More details in [explanation.md](explanation.md).
 
 ---
 
-Built by [Vishal Budhathoki](https://github.com/vishalbudhathoki)
+Built by [Vishal Budhathoki](https://github.com/vishalbudhathoki), [Aryan Sharma](https://github.com/aryansharma0730-cloud), and [Raghav Tayal](https://github.com/raghavtayal0903)
 
 Data from CTU official timetables.
