@@ -21,7 +21,7 @@ Built this as an end-term project. The whole thing runs on Flask + vanilla JS wi
 
 ## Tech used
 
-- **Frontend**: Plain JavaScript, HTML, CSS (dark theme)
+- **Frontend**: Plain JavaScript, HTML, CSS
 - **Map**: Leaflet.js + OpenStreetMap tiles
 - **Backend**: Python Flask serving a REST API
 - **Data**: Two JSON files — `data.json` has the stop coordinates, `routes.json` has all the schedules and route info
