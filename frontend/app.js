@@ -430,7 +430,7 @@ document.getElementById('panel-content').addEventListener('click', function() {
     var panel = document.getElementById('right-panel');
     var content = document.getElementById('panel-content');
     var startY = 0, currentY = 0;
-    var dragging = false, pending = false;
+    var dragging = false, pending = false, dragSource = null;
     var sheetBaseHeight = 0;
 
     function getBaseHeight() {
@@ -456,6 +456,8 @@ document.getElementById('panel-content').addEventListener('click', function() {
         if (!panel.classList.contains('sheet-open')) return;
         if (content.scrollTop > 0) return;
 
+        dragSource = e.target.closest('#panel-content') ? 'content' : 'handle';
+
         // Lock scroll immediately so content can't move during pending
         lockScroll();
         pending = true;
@@ -472,6 +474,12 @@ document.getElementById('panel-content').addEventListener('click', function() {
         var diff = currentY - startY;
 
         if (pending) {
+            if (dragSource === 'content' && diff < -5) {
+                // Swiping UP on content -> let them scroll!
+                pending = false;
+                unlockScroll();
+                return;
+            }
             if (Math.abs(diff) > 15) {
                 // Commit to dragging
                 pending = false;
