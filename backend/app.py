@@ -370,6 +370,17 @@ def plan_trip():
         if not next_buses:
             continue
 
+        # Calculate estimated distance and fare (CTU slabs)
+        fraction = float(to_idx - from_idx) / max(1, num_stops - 1)
+        travel_km = length_km * fraction
+        
+        if travel_km <= 5.0:
+            fare_range = "₹10 (Non-AC) - ₹15 (AC)"
+        elif travel_km <= 10.0:
+            fare_range = "₹20 (Non-AC) - ₹25 (AC)"
+        else:
+            fare_range = "₹25 (Non-AC) - ₹30 (AC)"
+
         results.append({
             'route_id': r['route_id'],
             'name': r['name'],
@@ -377,6 +388,7 @@ def plan_trip():
             'from_stop': stops[from_idx]['name'],
             'to_stop': stops[to_idx]['name'],
             'travel_min': travel_time,
+            'fare': fare_range,
             'next_bus': next_buses[0],  # only the very next bus
             'frequency': sched.get('frequency', '')
         })

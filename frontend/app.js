@@ -131,6 +131,9 @@ function showRouteDetail(route, highlightFrom, highlightTo, tripInfo) {
         html += '<table class="schedule-table">';
         html += '<tr><th>Next Bus</th><td style="color:#D4A843;font-weight:700">' + tripInfo.depart + ' <span style="opacity:0.8">(' + waitLabel + ')</span></td></tr>';
         html += '<tr><th>Travel Time</th><td>' + tripInfo.travel + ' min</td></tr>';
+        if (tripInfo.fare && tripInfo.fare !== 'undefined') {
+            html += '<tr><th>Est. Fare</th><td>' + tripInfo.fare + '</td></tr>';
+        }
         html += '</table>';
     }
 
@@ -277,7 +280,7 @@ document.getElementById('plan-btn').addEventListener('click', function() {
             for (var i = 0; i < results.length; i++) {
                 var r = results[i];
                 var waitText = r.next_bus.wait_min <= 1 ? 'Now' : 'Wait: ' + r.next_bus.wait_min + ' min';
-                html += '<div class="plan-card" style="cursor:pointer" data-route-id="' + r.route_id + '" data-from="' + r.from_stop + '" data-to="' + r.to_stop + '" data-depart="' + r.next_bus.time + '" data-travel="' + r.travel_min + '" data-wait="' + waitText + '">';
+                html += '<div class="plan-card" style="cursor:pointer" data-route-id="' + r.route_id + '" data-from="' + r.from_stop + '" data-to="' + r.to_stop + '" data-depart="' + r.next_bus.time + '" data-travel="' + r.travel_min + '" data-wait="' + waitText + '" data-fare="' + r.fare + '">';
                 html += '<div class="plan-route-header">';
                 html += '<div class="route-color" style="background:' + r.color + '"></div>';
                 html += '<div class="plan-route-info">';
@@ -302,7 +305,8 @@ document.getElementById('plan-btn').addEventListener('click', function() {
                     var info = {
                         depart: this.getAttribute('data-depart'),
                         travel: this.getAttribute('data-travel'),
-                        wait: this.getAttribute('data-wait')
+                        wait: this.getAttribute('data-wait'),
+                        fare: this.getAttribute('data-fare')
                     };
                     selectRoute(rId, fStop, tStop, info);
                 });
