@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Saved - CTU Navigator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#6063ee",
+                        "on-tertiary-container": "#f23d5c",
+                        "background": "#f7f9fb",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#000000",
+                        "tertiary": "#000000",
+                        "inverse-primary": "#c6c6c6",
+                        "secondary-fixed": "#e1e0ff",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-secondary": "#ffffff",
+                        "outline": "#7e7576",
+                        "secondary": "#4648d4",
+                        "on-tertiary-fixed-variant": "#92002a",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface": "#f7f9fb",
+                        "on-tertiary-fixed": "#40000d",
+                        "tertiary-container": "#40000d",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "surface-variant": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e6e8ea",
+                        "on-surface": "#191c1e",
+                        "on-secondary-container": "#fffbff",
+                        "primary-container": "#1b1b1b",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdadb",
+                        "on-background": "#191c1e",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "surface-tint": "#5e5e5e",
+                        "tertiary-fixed-dim": "#ffb2b7",
+                        "on-surface-variant": "#4c4546",
+                        "on-primary-container": "#848484",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary-fixed": "#07006c",
+                        "primary-fixed": "#e2e2e2",
+                        "surface-container": "#eceef0",
+                        "on-primary-fixed": "#1b1b1b",
+                        "outline-variant": "#cfc4c5",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-fixed-variant": "#2f2ebe",
+                        "on-primary-fixed-variant": "#474747"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "24px",
+                        "md": "16px",
+                        "max-width": "1280px",
+                        "margin-desktop": "64px",
+                        "xs": "4px",
+                        "xl": "40px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "sm": "8px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "label-sm": ["JetBrains Mono"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "body-sm": ["Inter"],
+                        "label-md": ["JetBrains Mono"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #f8fafc; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-white/10 md:hidden flex justify-between items-center px-md h-16">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">CTU Navigator</div>
+<div class="flex gap-sm">
+<button aria-label="Notifications" class="p-2 text-primary hover:bg-white/5 transition-colors rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+</button>
+<button aria-label="Account" class="p-2 text-primary hover:bg-white/5 transition-colors rounded-full">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+</button>
+</div>
+</header>
+<!-- SideNavBar (Hidden on Mobile, Visible on md+) -->
+<nav class="fixed left-0 top-0 h-full w-80 hidden md:flex flex-col bg-surface-container border-r border-white/10 p-md gap-sm z-40">
+<div class="mb-xl pt-lg px-sm">
+<h1 class="font-display-lg text-display-lg text-primary-container tracking-tight">CTU Navigator</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-sm">Sector 17, ISBT</p>
+</div>
+<a class="flex items-center gap-md px-md py-3 text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all rounded-lg font-body-lg text-body-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">map</span>
+            Map View
+        </a>
+<a class="flex items-center gap-md px-md py-3 text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all rounded-lg font-body-lg text-body-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">directions_bus</span>
+            Trip Planner
+        </a>
+<a class="flex items-center gap-md px-md py-3 text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all rounded-lg font-body-lg text-body-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">route</span>
+            Route Finder
+        </a>
+<a class="flex items-center gap-md px-md py-3 text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all rounded-lg font-body-lg text-body-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">location_on</span>
+            Bus Stops
+        </a>
+<a class="flex items-center gap-md px-md py-3 bg-primary-container text-on-primary rounded-lg font-body-lg text-body-lg font-bold scale-95 duration-100" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+            Saved
+        </a>
+<div class="mt-auto">
+<button class="w-full py-3 px-4 bg-primary text-on-primary rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider hover:bg-primary/90 transition-colors">
+                Find Buses
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="md:ml-80 pt-20 md:pt-16 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<!-- Page Header & Tabs -->
+<div class="mb-lg">
+<h1 class="font-display-lg text-display-lg text-primary mb-md hidden md:block">Saved</h1>
+<!-- Tabs -->
+<div class="flex border-b border-outline-variant/50">
+<button class="flex-1 md:flex-none px-xl py-3 border-b-2 border-primary text-primary font-label-md text-label-md uppercase tracking-wider text-center">
+                    Routes
+                </button>
+<button class="flex-1 md:flex-none px-xl py-3 border-b-2 border-transparent text-on-surface-variant hover:text-primary font-label-md text-label-md uppercase tracking-wider text-center transition-colors">
+                    Places
+                </button>
+</div>
+</div>
+<!-- Saved Routes Grid (Bento/Card Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Route Card 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-md flex flex-col hover:border-outline-variant transition-colors group">
+<div class="flex justify-between items-start mb-sm">
+<div class="flex items-center gap-sm">
+<span class="inline-flex items-center justify-center bg-primary text-on-primary rounded px-2 py-1 font-label-sm text-label-sm uppercase">Route 214</span>
+<span class="inline-flex items-center justify-center bg-surface-variant text-on-surface-variant rounded px-2 py-1 font-label-sm text-label-sm uppercase">Express</span>
+</div>
+<button aria-label="Remove saved route" class="text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">ISBT 17 to IT Park</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md flex-grow">Via Sector 16, Sector 15, PGI, Nayagaon. Approx. 45 mins.</p>
+<div class="flex gap-sm mt-auto pt-sm border-t border-outline-variant/20">
+<button class="flex-1 py-2 px-3 bg-transparent border border-primary text-primary rounded font-label-sm text-label-sm uppercase tracking-wider hover:bg-surface-variant transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">map</span> Live Map
+                    </button>
+<button class="flex-1 py-2 px-3 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase tracking-wider hover:bg-primary/90 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">schedule</span> Timetable
+                    </button>
+</div>
+</article>
+<!-- Route Card 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-md flex flex-col hover:border-outline-variant transition-colors group">
+<div class="flex justify-between items-start mb-sm">
+<div class="flex items-center gap-sm">
+<span class="inline-flex items-center justify-center bg-primary text-on-primary rounded px-2 py-1 font-label-sm text-label-sm uppercase">Route 11</span>
+</div>
+<button aria-label="Remove saved route" class="text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">PGI to Railway Station</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md flex-grow">Via Madhya Marg, Sector 26. Approx. 35 mins.</p>
+<div class="flex gap-sm mt-auto pt-sm border-t border-outline-variant/20">
+<button class="flex-1 py-2 px-3 bg-transparent border border-primary text-primary rounded font-label-sm text-label-sm uppercase tracking-wider hover:bg-surface-variant transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">map</span> Live Map
+                    </button>
+<button class="flex-1 py-2 px-3 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase tracking-wider hover:bg-primary/90 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">schedule</span> Timetable
+                    </button>
+</div>
+</article>
+<!-- Add New Route Card -->
+<article class="bg-surface border border-dashed border-outline-variant rounded-xl p-md flex flex-col items-center justify-center text-center hover:bg-surface-container-low transition-colors cursor-pointer min-h-[200px]">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary mb-sm">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Save New Route</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Find and save frequently used routes for quick access.</p>
+</article>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl md:hidden bg-surface-container-highest/90 backdrop-blur-lg border-t border-white/10 h-20 px-edge-margin pb-base flex justify-around items-center">
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">map</span>
+<span class="font-label-sm text-label-sm">Map</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">explore</span>
+<span class="font-label-sm text-label-sm">Planner</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">alt_route</span>
+<span class="font-label-sm text-label-sm">Routes</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary rounded-full w-12 h-12 scale-90 duration-200 shadow-md" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<!-- Hidden label for active state to fit circular shape better, per design system active styling -->
+</a>
+</nav>
+</body></html>
