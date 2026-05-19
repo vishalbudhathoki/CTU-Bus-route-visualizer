@@ -425,12 +425,12 @@ document.getElementById('panel-content').addEventListener('click', function() {
     }
 });
 
-// Swipe gestures — drag sheet or scroll content
+// Swipe gestures — touch anywhere on the sheet, threshold-based commit
 (function() {
     var panel = document.getElementById('right-panel');
     var content = document.getElementById('panel-content');
     var startY = 0, currentY = 0;
-    var dragging = false, dragSource = null;
+    var dragging = false, pending = false;
     var sheetBaseHeight = 0;
 
     function getBaseHeight() {
@@ -439,54 +439,87 @@ document.getElementById('panel-content').addEventListener('click', function() {
         return window.innerHeight * 0.65;
     }
 
+    function lockScroll() {
+        content.style.overflow = 'hidden';
+        content.style.touchAction = 'none';
+        panel.style.overflow = 'hidden';
+    }
+
+    function unlockScroll() {
+        content.style.overflow = '';
+        content.style.touchAction = '';
+        panel.style.overflow = '';
+    }
+
     panel.addEventListener('touchstart', function(e) {
         if (!isMobile()) return;
         if (!panel.classList.contains('sheet-open')) return;
 
-        dragSource = e.target.closest('#panel-content') ? 'content' : 'handle';
+        var isFull = panel.classList.contains('sheet-full');
+
+        // If full and scrolled down, native scroll takes over completely
+        if (isFull && content.scrollTop > 0) return;
+
+        // If half open, ALWAYS lock scroll so any upward swipe drags the sheet
+        if (!isFull) {
+            lockScroll();
+        }
+
+        pending = true;
+        dragging = false;
         startY = e.touches[0].clientY;
         currentY = startY;
         sheetBaseHeight = getBaseHeight();
-        dragging = false;
-
-        // If touching handle, start drag immediately
-        if (dragSource === 'handle') {
-            dragging = true;
-            panel.style.transition = 'none';
-        }
-    }, { passive: true });
+    });
 
     document.addEventListener('touchmove', function(e) {
-        if (!isMobile() || !panel.classList.contains('sheet-open')) return;
-        if (!dragSource) return;
+        if (!pending && !dragging) return;
 
         currentY = e.touches[0].clientY;
         var diff = currentY - startY;
 
-        // Determine if we should start dragging from content
-        if (!dragging && dragSource === 'content') {
-            // Only start dragging the sheet if scrolled to top AND swiping down
-            if (content.scrollTop <= 0 && diff > 0) {
+        if (pending) {
+            var isFull = panel.classList.contains('sheet-full');
+
+            // If full sheet and swiping UP, abort drag and let native scroll take over
+            if (isFull && diff < 0) {
+                pending = false;
+                return;
+            }
+
+            if (Math.abs(diff) > 15) {
+                // Commit to dragging the sheet
+                pending = false;
                 dragging = true;
+                lockScroll(); // Ensure locked if it wasn't already
                 panel.style.transition = 'none';
+            } else {
+                // Not enough movement — block scroll only if half-open
+                if (!isFull) {
+                    e.preventDefault();
+                }
+                return;
             }
         }
 
-        if (dragging) {
-            e.preventDefault(); // Stop native scrolling and pull-to-refresh
-            var newHeight = sheetBaseHeight - diff;
-            newHeight = Math.max(0, Math.min(window.innerHeight, newHeight));
-            panel.style.height = newHeight + 'px';
-            panel.style.maxHeight = newHeight + 'px';
-        }
+        if (!dragging) return;
+
+        var newHeight = sheetBaseHeight - diff;
+        newHeight = Math.max(0, Math.min(window.innerHeight, newHeight));
+        panel.style.height = newHeight + 'px';
+        panel.style.maxHeight = newHeight + 'px';
+        e.preventDefault();
     }, { passive: false });
 
     document.addEventListener('touchend', function() {
-        if (!dragSource) return;
-        dragSource = null;
+        if (pending) {
+            pending = false;
+            unlockScroll();
+            return;
+        }
         if (!dragging) return;
-        
         dragging = false;
+        unlockScroll();
         panel.style.transition = '';
         panel.style.height = '';
         panel.style.maxHeight = '';
@@ -498,7 +531,8 @@ document.getElementById('panel-content').addEventListener('click', function() {
         if (fingerPercent <= 0.35) {
             panel.classList.remove('sheet-peek');
             expandSheet();
-        } else if (fingerPercent >= 0.65) {
+        }
+        else if (fingerPercent >= 0.65) {
             if (isRouteView) {
                 panel.classList.remove('sheet-full');
                 panel.classList.add('sheet-peek');
