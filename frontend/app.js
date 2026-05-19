@@ -457,8 +457,8 @@ document.getElementById('panel-content').addEventListener('click', function() {
 
         var isFull = panel.classList.contains('sheet-full');
 
-        // If full and scrolled down, native scroll takes over completely
-        if (isFull && content.scrollTop > 0) return;
+        // If full and scrolled down (with 5px forgiveness), native scroll takes over
+        if (isFull && content.scrollTop > 5) return;
 
         // If half open, ALWAYS lock scroll so any upward swipe drags the sheet
         if (!isFull) {
@@ -525,14 +525,11 @@ document.getElementById('panel-content').addEventListener('click', function() {
         panel.style.maxHeight = '';
 
         var isRouteView = document.getElementById('app').classList.contains('route-viewing');
-        var vh = window.innerHeight;
-        var fingerPercent = currentY / vh;
+        var diff = currentY - startY;
 
-        if (fingerPercent <= 0.35) {
-            panel.classList.remove('sheet-peek');
-            expandSheet();
-        }
-        else if (fingerPercent >= 0.65) {
+        // Delta-based snapping (feels much more effortless)
+        if (diff > 50) {
+            // Dragged DOWN intentionally
             if (isRouteView) {
                 panel.classList.remove('sheet-full');
                 panel.classList.add('sheet-peek');
@@ -540,6 +537,19 @@ document.getElementById('panel-content').addEventListener('click', function() {
                 collapseSheet();
             } else {
                 closeSheet();
+            }
+        } else if (diff < -50) {
+            // Dragged UP intentionally
+            panel.classList.remove('sheet-peek');
+            expandSheet();
+        } else {
+            // Not dragged enough, snap back to wherever it started
+            if (panel.classList.contains('sheet-full')) {
+                expandSheet();
+            } else if (panel.classList.contains('sheet-peek')) {
+                panel.classList.add('sheet-peek');
+            } else {
+                collapseSheet();
             }
         }
     });
