@@ -321,7 +321,7 @@ document.getElementById('panel-toggle').addEventListener('click', function() {
 
 // ===== Mobile Bottom Sheet =====
 function isMobile() {
-    return window.matchMedia('(max-width: 1024px)').matches;
+    return window.matchMedia('(max-width: 834px)').matches;
 }
 
 function openSheet() {
