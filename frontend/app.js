@@ -529,8 +529,8 @@ document.getElementById('panel-content').addEventListener('click', function() {
         var fingerPercent = currentY / vh;
 
         // Threshold-based snapping
-        if (fingerPercent >= 0.90) {
-            // Only collapse/close if dragged down to 90% of the screen
+        if (fingerPercent >= 0.65) {
+            // Only collapse/close if dragged down past 65% of the screen
             if (isRouteView) {
                 panel.classList.remove('sheet-full');
                 panel.classList.add('sheet-peek');
@@ -539,8 +539,8 @@ document.getElementById('panel-content').addEventListener('click', function() {
             } else {
                 closeSheet();
             }
-        } else if (fingerPercent <= 0.40) {
-            // Dragged up past 40% of screen expands it
+        } else if (fingerPercent <= 0.35) {
+            // Dragged up past 35% of screen expands it
             panel.classList.remove('sheet-peek');
             expandSheet();
         } else {
