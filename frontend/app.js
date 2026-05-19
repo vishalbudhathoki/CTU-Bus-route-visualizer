@@ -457,8 +457,8 @@ document.getElementById('panel-content').addEventListener('click', function() {
 
         var isFull = panel.classList.contains('sheet-full');
 
-        // If full and scrolled down (with 5px forgiveness), native scroll takes over
-        if (isFull && content.scrollTop > 5) return;
+        // It won't move the sheet down unless the content is at the very top (scrollTop <= 1)
+        if (isFull && content.scrollTop > 1) return;
 
         // If half open, ALWAYS lock scroll so any upward swipe drags the sheet
         if (!isFull) {
@@ -525,11 +525,12 @@ document.getElementById('panel-content').addEventListener('click', function() {
         panel.style.maxHeight = '';
 
         var isRouteView = document.getElementById('app').classList.contains('route-viewing');
-        var diff = currentY - startY;
+        var vh = window.innerHeight;
+        var fingerPercent = currentY / vh;
 
-        // Delta-based snapping (feels much more effortless)
-        if (diff > 50) {
-            // Dragged DOWN intentionally
+        // Threshold-based snapping
+        if (fingerPercent >= 0.90) {
+            // Only collapse/close if dragged down to 90% of the screen
             if (isRouteView) {
                 panel.classList.remove('sheet-full');
                 panel.classList.add('sheet-peek');
@@ -538,8 +539,8 @@ document.getElementById('panel-content').addEventListener('click', function() {
             } else {
                 closeSheet();
             }
-        } else if (diff < -50) {
-            // Dragged UP intentionally
+        } else if (fingerPercent <= 0.40) {
+            // Dragged up past 40% of screen expands it
             panel.classList.remove('sheet-peek');
             expandSheet();
         } else {
