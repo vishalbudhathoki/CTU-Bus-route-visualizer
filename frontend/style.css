@@ -580,6 +580,7 @@ body {
         height: 100vh;
         height: 100dvh;
         overflow: hidden;
+        overscroll-behavior-y: none;
     }
 
     /* --- Sidebar becomes compact top bar --- */
@@ -759,6 +760,7 @@ body {
         flex: 1;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
+        overscroll-behavior-y: none;
     }
 
     #search-box {

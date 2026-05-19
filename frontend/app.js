@@ -425,6 +425,27 @@ document.getElementById('panel-content').addEventListener('click', function() {
     }
 });
 
+// Tap on the drag handle to toggle minimize/maximize
+document.getElementById('panel-drag-handle').addEventListener('click', function() {
+    if (!isMobile()) return;
+    var panel = document.getElementById('right-panel');
+    var isRouteView = document.getElementById('app').classList.contains('route-viewing');
+    
+    if (panel.classList.contains('sheet-full')) {
+        // Minimize
+        if (isRouteView) {
+            panel.classList.remove('sheet-full');
+            panel.classList.add('sheet-peek');
+        } else {
+            collapseSheet();
+        }
+    } else {
+        // Maximize
+        panel.classList.remove('sheet-peek');
+        expandSheet();
+    }
+});
+
 // Swipe gestures — touch anywhere on the sheet, threshold-based commit
 (function() {
     var panel = document.getElementById('right-panel');
