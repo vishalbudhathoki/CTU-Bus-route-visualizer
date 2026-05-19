@@ -526,11 +526,13 @@ document.getElementById('panel-content').addEventListener('click', function() {
 
         var isRouteView = document.getElementById('app').classList.contains('route-viewing');
         var vh = window.innerHeight;
-        var fingerPercent = currentY / vh;
+        var diff = currentY - startY;
+        var finalHeight = sheetBaseHeight - diff;
+        var finalHeightPercent = finalHeight / vh;
 
-        // Threshold-based snapping
-        if (fingerPercent >= 0.65) {
-            // Only collapse/close if dragged down past 65% of the screen
+        // Threshold based on the actual visual height of the sheet when you let go
+        // 0.60 means if you drag it down by 40% from the top, it snaps down
+        if (finalHeightPercent <= 0.60) {
             if (isRouteView) {
                 panel.classList.remove('sheet-full');
                 panel.classList.add('sheet-peek');
@@ -539,12 +541,12 @@ document.getElementById('panel-content').addEventListener('click', function() {
             } else {
                 closeSheet();
             }
-        } else if (fingerPercent <= 0.35) {
-            // Dragged up past 35% of screen expands it
+        } else if (finalHeightPercent >= 0.75) {
+            // If the sheet is pulled above 75% of the screen, expand to full
             panel.classList.remove('sheet-peek');
             expandSheet();
         } else {
-            // Not dragged enough, snap back to wherever it started
+            // Not dragged past a threshold, snap back to wherever it started
             if (panel.classList.contains('sheet-full')) {
                 expandSheet();
             } else if (panel.classList.contains('sheet-peek')) {
