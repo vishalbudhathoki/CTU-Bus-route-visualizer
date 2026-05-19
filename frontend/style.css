@@ -331,6 +331,14 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.bus-icon {
+    vertical-align: middle;
+    flex-shrink: 0;
 }
 
 .plan-bus-wait {
@@ -554,57 +562,336 @@ body {
     border-right: 1px solid var(--charcoal) !important;
 }
 
-/* ===== Responsive ===== */
+/* ===== Mobile-only elements (hidden on desktop) ===== */
+#mobile-fab,
+#mobile-back,
+#mobile-recenter,
+#sheet-overlay,
+#panel-drag-handle {
+    display: none;
+}
+
+/* ===== Responsive – Mobile ===== */
 @media (max-width: 834px) {
+
+    /* --- Layout --- */
     #app {
         flex-direction: column;
+        height: 100vh;
+        height: 100dvh;
+        overflow: hidden;
     }
+
+    /* --- Sidebar becomes compact top bar --- */
     #sidebar {
         width: 100%;
         min-width: unset;
         height: auto;
-        max-height: 40vh;
+        max-height: none;
+        overflow: visible;
         border-right: none;
         border-bottom: 1px solid var(--charcoal);
+        flex-shrink: 0;
     }
+
+    #sidebar-header {
+        padding: 10px 16px 6px;
+    }
+
+    #sidebar-header h1 {
+        font-size: 18px;
+        margin-bottom: 2px;
+    }
+
+    #sidebar-header p {
+        font-size: 10px;
+    }
+
+    #trip-planner {
+        padding: 0 16px 10px;
+        gap: 8px;
+    }
+
+    .planner-field input {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .planner-field label {
+        font-size: 10px;
+    }
+
+    #plan-btn {
+        padding: 12px;
+        font-size: 13px;
+        margin-top: 2px;
+    }
+
+    #plan-results {
+        max-height: 50vh;
+        padding: 8px;
+        overflow-y: auto;
+        gap: 8px;
+    }
+
+    #plan-results .plan-card {
+        padding: 10px 12px;
+    }
+
+    #plan-results .plan-route-header {
+        gap: 8px;
+        margin-bottom: 6px;
+    }
+
+    #plan-results .route-id {
+        font-size: 16px;
+    }
+
+    #plan-results .plan-travel-time {
+        font-size: 12px;
+    }
+
+    #plan-results .plan-stops {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    #plan-results .plan-bus {
+        padding: 8px 10px;
+    }
+
+    #plan-results .plan-bus-time {
+        font-size: 13px;
+        gap: 4px;
+    }
+
+    #plan-results .plan-bus-wait {
+        font-size: 12px;
+    }
+
+    #plan-results .bus-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* --- Map fills remaining space --- */
     #map {
-        height: 60vh;
-    }
-    #right-panel {
-        width: 100%;
+        flex: 1;
         height: auto;
+        min-height: 0;
+    }
+
+    .leaflet-control-zoom {
+        display: none !important;
+    }
+
+    /* --- Right panel becomes bottom sheet --- */
+    #right-panel {
+        position: fixed;
         top: auto;
+        right: 0;
         bottom: 0;
         left: 0;
-        right: 0;
+        width: 100%;
+        height: 65vh;
+        max-height: 65vh;
         border-left: none;
         border-top: 1px solid var(--charcoal);
-        max-height: 60vh;
+        border-radius: 16px 16px 0 0;
+        transform: translateY(100%);
+        transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+        flex-direction: column;
+        z-index: 1200;
     }
+
+    #right-panel.sheet-open {
+        transform: translateY(0);
+    }
+
+    #right-panel.sheet-full {
+        height: 100vh;
+        height: 100dvh;
+        max-height: 100vh;
+        max-height: 100dvh;
+        border-radius: 0;
+        transition: height 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                    max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                    border-radius 0.3s;
+    }
+
+    #right-panel.sheet-peek {
+        height: 40vh;
+        max-height: 40vh;
+        overflow: hidden;
+        transition: height 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                    max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* Hide the desktop toggle on mobile */
+    #panel-toggle {
+        display: none;
+    }
+
+    /* Desktop collapsed state disabled on mobile */
     #right-panel.collapsed {
         transform: translateY(100%);
     }
-    #panel-toggle {
-        top: -48px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 48px;
-        height: 32px;
-        border-right: 1px solid var(--ash);
-        border-bottom: none;
+
+    /* Show drag handle */
+    #panel-drag-handle {
+        display: flex;
+        justify-content: center;
+        padding: 12px 0 8px;
+        cursor: grab;
+        flex-shrink: 0;
     }
-    #panel-toggle::after {
-        content: '▼';
-        font-size: 12px;
+
+    #panel-drag-handle span {
+        width: 40px;
+        height: 4px;
+        background: var(--ash);
+        border-radius: 2px;
     }
-    #panel-toggle { color: transparent; }
-    
-    #right-panel.collapsed #panel-toggle {
-        transform: translateX(-50%);
-        border-right: 1px solid var(--ash);
+
+
+
+    #panel-content {
+        flex: 1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
-    #right-panel.collapsed #panel-toggle::after {
-        content: '▲';
+
+    #search-box {
+        padding: 8px 16px 16px;
+    }
+
+    /* --- FAB button --- */
+    #mobile-fab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--gold);
+        color: var(--black);
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1100;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        transition: opacity 0.2s, transform 0.2s;
+    }
+
+    #mobile-fab:active {
+        transform: scale(0.92);
+    }
+
+    #mobile-fab.hidden {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.8);
+    }
+
+    /* --- Overlay --- */
+    #sheet-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1100;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+
+    #sheet-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* --- Suggestions fix for mobile --- */
+    .suggestions {
+        z-index: 200;
+    }
+
+    /* --- Route viewing mode --- */
+    /* When a route is active: sidebar hides, map goes full screen */
+    #app.route-viewing #sidebar {
+        display: none;
+    }
+
+    #app.route-viewing #map {
+        flex: 1;
+    }
+
+    #app.route-viewing #mobile-fab {
+        display: none;
+    }
+
+    /* Hide search box and back-to-list in bottom sheet when viewing a route */
+    #app.route-viewing #search-box,
+    #app.route-viewing #back-btn {
+        display: none;
+    }
+
+    /* Back to search button */
+    #mobile-back {
+        display: none;
+        position: fixed;
+        top: 16px;
+        left: 16px;
+        z-index: 1100;
+        padding: 10px 18px;
+        background: var(--charcoal);
         color: var(--white);
+        border: 1px solid var(--ash);
+        border-radius: 0;
+        font-family: var(--font-text);
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+    }
+
+    #mobile-back:active {
+        background: var(--gold);
+        color: var(--black);
+    }
+
+    #app.route-viewing #mobile-back {
+        display: block;
+    }
+
+    /* Recenter button */
+    #mobile-recenter {
+        display: none;
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 1100;
+        width: 44px;
+        height: 44px;
+        background: var(--charcoal);
+        color: var(--white);
+        border: 1px solid var(--ash);
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        line-height: 1;
+    }
+
+    #mobile-recenter:active {
+        background: var(--gold);
+        color: var(--black);
+    }
+
+    #app.route-viewing #mobile-recenter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

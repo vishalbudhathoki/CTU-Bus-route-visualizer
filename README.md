@@ -16,6 +16,7 @@ Built this as an end-term project. The whole thing runs on Flask + vanilla JS wi
 - **Arrival time estimates** — uses the route distance and bus frequency to calculate when a bus will reach each stop
 - **Browse all routes** — collapsible side panel where you can scroll through every CTU route and see its stops on the map
 - **Map view** — stops show up as markers on a Leaflet map, origin/destination get highlighted when you search
+- **Mobile-first experience** — fluid swipe-up/down bottom sheet for browsing routes and planner results, dynamic map layout that adjusts based on interactions, and responsive UI elements
 
 ---
 
