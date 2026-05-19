@@ -425,12 +425,12 @@ document.getElementById('panel-content').addEventListener('click', function() {
     }
 });
 
-// Swipe gestures — touch anywhere on the sheet, threshold-based commit
+// Swipe gestures — drag sheet or scroll content
 (function() {
     var panel = document.getElementById('right-panel');
     var content = document.getElementById('panel-content');
     var startY = 0, currentY = 0;
-    var dragging = false, pending = false, dragSource = null;
+    var dragging = false, dragSource = null;
     var sheetBaseHeight = 0;
 
     function getBaseHeight() {
@@ -439,77 +439,54 @@ document.getElementById('panel-content').addEventListener('click', function() {
         return window.innerHeight * 0.65;
     }
 
-    function lockScroll() {
-        content.style.overflow = 'hidden';
-        content.style.touchAction = 'none';
-        panel.style.overflow = 'hidden';
-    }
-
-    function unlockScroll() {
-        content.style.overflow = '';
-        content.style.touchAction = '';
-        panel.style.overflow = '';
-    }
-
     panel.addEventListener('touchstart', function(e) {
         if (!isMobile()) return;
         if (!panel.classList.contains('sheet-open')) return;
-        if (content.scrollTop > 0) return;
 
         dragSource = e.target.closest('#panel-content') ? 'content' : 'handle';
-
-        // Lock scroll immediately so content can't move during pending
-        lockScroll();
-        pending = true;
-        dragging = false;
         startY = e.touches[0].clientY;
         currentY = startY;
         sheetBaseHeight = getBaseHeight();
-    });
+        dragging = false;
+
+        // If touching handle, start drag immediately
+        if (dragSource === 'handle') {
+            dragging = true;
+            panel.style.transition = 'none';
+        }
+    }, { passive: true });
 
     document.addEventListener('touchmove', function(e) {
-        if (!pending && !dragging) return;
+        if (!isMobile() || !panel.classList.contains('sheet-open')) return;
+        if (!dragSource) return;
 
         currentY = e.touches[0].clientY;
         var diff = currentY - startY;
 
-        if (pending) {
-            if (dragSource === 'content' && diff < -5) {
-                // Swiping UP on content -> let them scroll!
-                pending = false;
-                unlockScroll();
-                return;
-            }
-            if (Math.abs(diff) > 15) {
-                // Commit to dragging
-                pending = false;
+        // Determine if we should start dragging from content
+        if (!dragging && dragSource === 'content') {
+            // Only start dragging the sheet if scrolled to top AND swiping down
+            if (content.scrollTop <= 0 && diff > 0) {
                 dragging = true;
                 panel.style.transition = 'none';
-            } else {
-                // Not enough movement — block scroll but wait
-                e.preventDefault();
-                return;
             }
         }
 
-        if (!dragging) return;
-
-        var newHeight = sheetBaseHeight - diff;
-        newHeight = Math.max(0, Math.min(window.innerHeight, newHeight));
-        panel.style.height = newHeight + 'px';
-        panel.style.maxHeight = newHeight + 'px';
-        e.preventDefault();
+        if (dragging) {
+            e.preventDefault(); // Stop native scrolling and pull-to-refresh
+            var newHeight = sheetBaseHeight - diff;
+            newHeight = Math.max(0, Math.min(window.innerHeight, newHeight));
+            panel.style.height = newHeight + 'px';
+            panel.style.maxHeight = newHeight + 'px';
+        }
     }, { passive: false });
 
     document.addEventListener('touchend', function() {
-        if (pending) {
-            pending = false;
-            unlockScroll();
-            return;
-        }
+        if (!dragSource) return;
+        dragSource = null;
         if (!dragging) return;
+        
         dragging = false;
-        unlockScroll();
         panel.style.transition = '';
         panel.style.height = '';
         panel.style.maxHeight = '';
@@ -521,8 +498,7 @@ document.getElementById('panel-content').addEventListener('click', function() {
         if (fingerPercent <= 0.35) {
             panel.classList.remove('sheet-peek');
             expandSheet();
-        }
-        else if (fingerPercent >= 0.65) {
+        } else if (fingerPercent >= 0.65) {
             if (isRouteView) {
                 panel.classList.remove('sheet-full');
                 panel.classList.add('sheet-peek');
